@@ -1,0 +1,76 @@
+<!doctype html><html lang="sk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Protokol validačnej štúdie – Ausculta | breathune.eu</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"><link rel="icon" href="assets/icon.png">
+<style>@page{size:A4;margin:16mm}.pdf-only{display:none}@media print{.pdf-only{display:block}header nav,.no-print{display:none}h2{page-break-after:avoid}.card{page-break-inside:avoid}}</style></head><body><div class="wrap">
+<header class="nav"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/icon.png" alt=""><span>Ausculta<small>by Breathune</small></span></a>
+<nav><a href="index.html#ako">Ako to funguje</a><a href="index.html#navod">Návod</a><a href="support.html">Podpora</a><a href="privacy.html">Súkromie</a><a class="cta" href="methodology.html">Štúdia</a></nav>
+</div></header>
+<div class="wrap" style="padding-top:40px">
+
+<h1>Protokol pilotnej validačnej štúdie</h1>
+<p class="lead" style="color:var(--muted);font-size:18px">Ausculta – auskultácia smartfónom a slúchadlami s analýzou rytmu a dychových fenoménov. Návrh metodiky: MUDr. Ján Šikuta, PhD. · verzia 0.1 · 6. 10. 2026 · <a class="no-print" href="Ausculta_Protokol_Studie.pdf">stiahnuť PDF</a></p>
+
+<div class="card notice"><b>Účel dokumentu.</b> Opisuje, ako testovať Ausculta tak, aby výstupom boli publikovateľné čísla (zhoda s referenčnou metódou), nie dojmy. Je to pilot – slúži na kalibráciu prahov a na odhad veľkosti vzorky pre prípadnú riadnu štúdiu. Ausculta je edukačná pomôcka; štúdia nemení jej regulačný status.</div>
+
+<h2><small>1</small>Ciele a hypotézy</h2>
+<div class="grid">
+<div class="card"><h3>Primárny cieľ</h3><p>Zhoda srdcovej frekvencie z auskultácie (Ausculta) s referenčným EKG/pulzovým oxymetrom: stredný rozdiel a 95 % hranice zhody (Bland–Altman) v pokoji. Hypotéza: |bias| &lt; 3/min, LoA ±8/min pri signáli bez artefaktov.</p></div>
+<div class="card"><h3>Sekundárne ciele</h3><p>(a) Senzitivita/špecificita detekcie predčasných úderov vs EKG; (b) zhoda tried rytmu (pravidelný / s ES / nepravidelne nepravidelný) s EKG; (c) zhoda frekvencie dýchania s počítaním pozorovateľom; (d) zhoda vedľajších fenoménov (vrzgoty/piskoty/chrapoty) s nálezom skúseného auskultujúceho lekára; (e) pulzový deficit Ausculta vs Apple Watch vs manuálne apex–radiálne porovnanie.</p></div>
+<div class="card"><h3>Exploračné</h3><p>Rozdiel kvality medzi sondami (iPhone vs AirPods H2 vs staré AirPods HFP) a medzi zvonmi (uzáver, striekačka, dlaň); vplyv artefaktov na chybovosť; použiteľnosť (SUS dotazník).</p></div>
+</div>
+
+<h2><small>2</small>Dizajn a účastníci</h2>
+<div class="card"><p><b>Dizajn:</b> prospektívna, jednoramenná metodická (diagnostická) štúdia zhody; každý účastník je sám sebe kontrolou (súbežné meranie Ausculta + referencia).<br>
+<b>Pilot:</b> 30 dobrovoľníkov (dospelí, informovaný súhlas), z toho cielene ≥ 10 s známou arytmiou/extrasystolami (kardiologická ambulancia) a ≥ 10 s chronickým pľúcnym ochorením (astma/CHOCHP/fibróza), zvyšok zdraví.<br>
+<b>Vylúčenie:</b> implantovaný kardiostimulátor s neznámym režimom (len pre rytmové ciele), kožné lézie v mieste auskultácie, BMI &gt; 40 (slabý signál – exploračne áno, do primárnej analýzy nie).<br>
+<b>Etika:</b> neintervenčná, bez rizika; schválenie etickou komisiou pracoviska, anonymizované ID (P-001…), žiadne mená v nahrávkach ani metadátach.</p></div>
+
+<h2><small>3</small>Zariadenia a nastavenie</h2>
+<table><tr><th>Položka</th><th>Špecifikácia</th><th>Poznámka</th></tr>
+<tr><td>iPhone</td><td>iOS 26, Ausculta ≥ 0.1, tichý režim, bez obalu na spodnej hrane</td><td>rovnaký prístroj počas celej štúdie</td></tr>
+<tr><td>Slúchadlá A</td><td>AirPods Pro 3 (H2)</td><td>referenčná AirPod sonda</td></tr>
+<tr><td>Slúchadlá B</td><td>AirPods 2 (HFP)</td><td>„staré AirPods“ rameno</td></tr>
+<tr><td>Zvony</td><td>PET uzáver Ø 30 mm/otvor 6 mm; 20 ml striekačka; dlaň</td><td>poradie randomizovať</td></tr>
+<tr><td>Referencia srdce</td><td>12-zvodové EKG alebo 1-zvodový Holter/KardiaMobile, súbežne; pulzový oxymeter na prste</td><td>časová synchronizácia: tlesknutie na začiatku</td></tr>
+<tr><td>Referencia pľúca</td><td>súbežná auskultácia Littmann Classic III dvoma lekármi zaslepene; frekvencia dýchania počítaná 60 s</td><td>nezhoda → tretí hodnotiteľ</td></tr>
+<tr><td>Apple Watch</td><td>Series 9/10/Ultra, Ausculta Watch app</td><td>pre pulzový deficit a EKG kontext</td></tr></table>
+
+<h2><small>4</small>Postup merania (≈ 15 min / účastník)</h2>
+<div class="grid steps">
+<div class="card"><h3>Príprava</h3><p>Sed, 5 min pokoj, holý hrudník, tichá miestnosť (&lt; 40 dB(A) ak sa dá), nalepiť EKG elektródy / nasadiť oxymeter, Watch na nedominantnú ruku, zapnúť ANC na strane v uchu, mikrofón AirPods zafixovať na stranu sondy.</p></div>
+<div class="card"><h3>Synchronizácia</h3><p>Spustiť EKG záznam a nahrávanie v Ausculta; jedno hlasné tlesknutie pri hrudníku = značka t₀ v oboch signáloch.</p></div>
+<div class="card"><h3>Srdce – 4 × 30 s</h3><p>Hrot (M), filter Srdce: (1) sonda iPhone + uzáver; (2) AirPods Pro 3 + uzáver; (3) AirPods 2 + uzáver; (4) sonda iPhone + dlaň. Po každom úseku uložiť nahrávku s miestom a poznámkou „S1/S2 jasné / nejasné“.</p></div>
+<div class="card"><h3>Pľúca – 2 × 30 s</h3><p>Ľavá a pravá báza vzadu, filter Pľúca, sonda iPhone + uzáver, pomalé hlboké dýchanie ústami. Dvaja lekári súbežne počúvajú Littmannom a zapisujú: vezikulárne / oslabené / bronchiálne; vrzgoty (jemné/hrubé, fáza); piskoty; chrapoty; predĺžené exspírium.</p></div>
+<div class="card"><h3>Pulzový deficit – 60 s</h3><p>Hrot, sonda iPhone, filter Srdce, Watch meranie spustené z Ausculta; súčasne tretia osoba počíta radiálny pulz 60 s. Zapísať: Ausculta HR, Ausculta Watch HR, manuálny radiálny pulz, EKG HR.</p></div>
+<div class="card"><h3>Dotazník</h3><p>SUS (10 otázok) + 3 otázky: zrozumiteľnosť návodu, pohodlie zvonu, vnímaná kvalita zvuku 1–5.</p></div>
+</div>
+
+<h2><small>5</small>Premenné a výpočty</h2>
+<table><tr><th>Premenná</th><th>Ausculta</th><th>Referencia</th><th>Štatistika</th></tr>
+<tr><td>Srdcová frekvencia</td><td>priemer za 30 s (metadáta nahrávky)</td><td>EKG R-R priemer za rovnaký úsek</td><td>Bland–Altman, ICC(2,1), Pearson</td></tr>
+<tr><td>Predčasné údery</td><td>počet/min, bigemínia</td><td>počet SVES/KES na EKG</td><td>Se, Sp, PPV na úder (tolerancia ±150 ms), Cohenovo κ pre bigemíniu</td></tr>
+<tr><td>Trieda rytmu</td><td>pravidelný / s ES / resp. arytmia / nepravidelne nepravidelný</td><td>EKG diagnóza</td><td>vážené κ, matica zámien</td></tr>
+<tr><td>RR variabilita</td><td>CV, RMSSD z S1</td><td>CV, RMSSD z EKG</td><td>Bland–Altman</td></tr>
+<tr><td>Frekvencia dýchania</td><td>/min</td><td>počítanie 60 s</td><td>Bland–Altman</td></tr>
+<tr><td>Charakter dýchania, fenomény</td><td>trieda + počty</td><td>konsenzus dvoch lekárov</td><td>κ, Se/Sp na úsek</td></tr>
+<tr><td>Pulzový deficit</td><td>HR Ausculta − HR Watch</td><td>HR EKG − radiálny pulz</td><td>Bland–Altman; κ pre „deficit ≥ 10“</td></tr>
+<tr><td>Kvalita signálu</td><td>SNR, artefakty (flagy)</td><td>—</td><td>stratifikácia; vylúčiť úseky s clipping/handling</td></tr></table>
+<p style="color:var(--muted)">Veľkosť vzorky pilota (n = 30, 120 srdcových úsekov) stačí na odhad LoA s presnosťou ±1,5/min a na odhad Se detekcie ES s CI ±15 %, ak je ≥ 40 ES v súbore. Z pilota sa vypočíta n pre hlavnú štúdiu (cieľ CI κ ±0,1).</p>
+
+<h2><small>6</small>Zber a správa dát</h2>
+<div class="card"><p>Ausculta ukladá <b>WAV 16-bit</b> (48 kHz pri sonde iPhone/H2, 16 kHz pri HFP) + <b>JSON</b> metadáta (čas, sonda, filter, miesto, poznámka, orientačné výsledky, flagy artefaktov, Watch HR, deficit). Export: Zdieľať WAV → anonymizovaný priečinok <code>P-0xx/</code> (zvuk + JSON + EKG export + CRF v CSV). Záložné kópie na šifrovanom disku; žiadne mená; kľúč ID↔osoba oddelene u riešiteľa. Dátová tabuľka (CRF) má jeden riadok na úsek: <code>id, usek, sonda, zvon, filter, miesto, HR_pulse, HR_ekg, ES_pulse, ES_ekg, rytmus_pulse, rytmus_ekg, RR_pulse, RR_ref, fenomeny_pulse, fenomeny_ref, HR_watch, radial, SNR, artefakty, SUS…</code></p></div>
+
+<h2><small>7</small>Kalibrácia a iterácia</h2>
+<div class="card"><p>Po prvých 10 účastníkoch: (1) prejsť úseky s chybou HR &gt; 10/min a zistiť príčinu (S2 počítaná ako úder, slabý kontakt, HFP útlm); (2) doladiť prahy (prah detektora, hranica S1–S2 párovania, CV hranice tried, hranice vrzgotov); (3) zmraziť parametre a <b>zvyšných 20 účastníkov hodnotiť bez ďalších zmien</b> – inak sú výsledky optimisticky skreslené. Verzia appky a hash parametrov sa zapisuje do CRF.</p></div>
+
+<h2><small>8</small>Výstupy</h2>
+<div class="grid"><div class="card"><h3>Interné</h3><p>Kalibračná správa, prahy v kóde, zoznam limitov do App Store popisu („v pilote n=30 bola zhoda HR…“ len ak dáta dovolia).</p></div><div class="card"><h3>Publikačné</h3><p>Krátke oznámenie / poster: „Earbud-and-smartphone auscultation: agreement of rhythm and breath-sound metrics with ECG and expert auscultation – a pilot“. Dáta (anonymizované WAV + anotácie) ako otvorený dataset, ak účastníci súhlasia – dnes neexistuje dataset z AirPods sondy.</p></div><div class="card"><h3>Ďalší krok</h3><p>Ak κ pre fenomény &lt; 0,4: trénovať Core ML klasifikátor (ICBHI 2017 + vlastné dáta) namiesto ladenia heuristík.</p></div></div>
+
+<h2><small>9</small>Ilustrácie k postupu</h2>
+<div class="grid"><div class="card"><img src="assets/img/probe-iphone.svg" alt=""><h3>Úsek 1 – sonda iPhone</h3></div><div class="card"><img src="assets/img/probe-airpod.svg" alt=""><h3>Úseky 2–3 – sonda AirPod</h3></div><div class="card"><img src="assets/img/sites.svg" alt=""><h3>Miesta M a bázy</h3></div><div class="card"><img src="assets/img/watch-sync.svg" alt=""><h3>Pulzový deficit</h3></div></div>
+
+</div><footer><div class="wrap">
+<span>© 2026 Breathune · breathune.eu · Ausculta nie je zdravotnícka pomôcka.</span>
+<span><a href="index.html">Domov</a><a href="support.html">Podpora</a><a href="privacy.html">Súkromie</a><a href="methodology.html">Štúdia</a></span>
+</div></footer>
+<script src="assets/site.js" defer></script>
+</div></body></html>
