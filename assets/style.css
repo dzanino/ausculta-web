@@ -156,3 +156,8 @@ main > section.hero,main > section.pagehead{margin-top:0}
 main > section.story{margin-top:70px}
 @media (max-width:900px){main > section{margin:72px 0}}
 @media (max-width:900px){.phone{width:min(250px,66vw)}.phone .title{font-size:21px}.mini .val{font-size:24px}}
+
+/* ---------- language switch ---------- */
+nav a.lang{margin-left:18px;padding:5px 10px;border-radius:999px;border:1px solid var(--stroke);font-size:12.5px;letter-spacing:.04em;color:var(--muted)}
+nav a.lang b{color:var(--ink);font-weight:700}
+@media (max-width:900px){nav{display:flex;align-items:center;gap:8px}nav a.cta,nav a.lang{margin-left:0}nav a.lang{display:inline-block}}
