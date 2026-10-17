@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Technické info – Ako Ausculta funguje | Breathune</title>
-<meta name="description" content="Stručný technický opis aplikácie Ausculta: filtrovanie pásma, zosilnenie, redukcia šumu a zobrazenie zvukovej vlny a spektra.">
+<meta name="description" content="Stručný technický opis aplikácie Ausculta: filtrovanie pásma, zosilnenie, redukcia šumu, zvuková vlna a spektrum, nefiltrovaná kópia, spracovanie ukážok v atlase a ukážky EKG so zvukom.">
 <meta name="theme-color" content="#060a18">
 <meta property="og:title" content="Technické info – Ako Ausculta funguje | Breathune">
-<meta property="og:description" content="Stručný technický opis aplikácie Ausculta: filtrovanie pásma, zosilnenie, redukcia šumu a zobrazenie zvukovej vlny a spektra.">
+<meta property="og:description" content="Stručný technický opis aplikácie Ausculta: filtrovanie pásma, zosilnenie, redukcia šumu, zvuková vlna a spektrum, nefiltrovaná kópia, spracovanie ukážok v atlase a ukážky EKG so zvukom.">
 <meta property="og:image" content="assets/icon.png">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
@@ -19,31 +19,40 @@
 
 
 
+
+
+
+
+
+
+
 <link rel="alternate" hreflang="sk" href="methodology.html"><link rel="alternate" hreflang="en" href="en/methodology.html">
 </head>
 <body>
 <header class="nav"><div class="wrap">
 <a class="brand" href="index.html"><img src="assets/icon.png" alt=""><span>Ausculta<small>by Breathune</small></span></a>
-<nav><a href="index.html#ako">Ako to funguje</a><a href="index.html#navod">Návod</a><a href="support.html">Podpora</a><a href="privacy.html">Súkromie</a><a href="methodology.html" class="cta on">Technické info</a><a class="lang" href="en/methodology.html" hreflang="en" lang="en" aria-label="English version"><b>SK</b> · EN</a></nav>
+<nav><a href="index.html#ako">Ako to funguje</a><a href="index.html#navod">Návod</a><a href="support.html">Podpora</a><a href="privacy.html">Súkromie</a><a href="methodology.html" class="cta on">Info</a><a class="lang" href="en/methodology.html" hreflang="en" lang="en" aria-label="English version"><b>SK</b> · EN</a></nav>
 </div></header>
 
 <main class="wrap">
 <section class="pagehead reveal" style="max-width:820px">
   <span class="eyebrow">Technické info</span>
   <h1>Ako Ausculta <span class="grad">funguje</span></h1>
-  <p class="lead">Stručný opis, čo sa so zvukom deje od mikrofónu po slúchadlá. Ausculta je edukačná pomôcka: zvuk zosilní, odfiltruje a zobrazí. Nič nemeria a nič nehodnotí.</p>
+  <p class="lead">Stručný opis, čo sa so zvukom deje od mikrofónu po slúchadlá, a odkiaľ sú ukážky v atlase. Ausculta je edukačná pomôcka: zvuk zosilní, odfiltruje a zobrazí. Nič nemeria a nič nehodnotí.</p>
 </section>
 
 <section class="reveal">
   <span class="eyebrow">Cesta zvuku</span>
   <h2>Od mikrofónu po slúchadlá</h2>
   <div class="grid steps">
-    <div class="card"><h3>Snímanie</h3><p>Hlavná je sonda iPhone: spodný mikrofón v plnej kvalite (48 kHz), bez hlasového spracovania. Sonda AirPod sa ponúka len tam, kde iOS dá vysokokvalitné spojenie s mikrofónom (iOS 26, AirPods Pro 2 / Pro 3, AirPods 4, mimo EÚ).</p></div>
+    <div class="card"><h3>Snímanie</h3><p>Hlavná je sonda iPhone: spodný mikrofón v plnej kvalite (48 kHz), bez hlasového spracovania. Sonda AirPod sa ponúka tam, kde iOS dá vysokokvalitné spojenie s mikrofónom (iOS 26, AirPods Pro 2 / Pro 3, AirPods 4, mimo EÚ). V EÚ sa neponúka, použite sondu iPhone.</p></div>
+    <div class="card"><h3>Nefiltrovaná kópia</h3><p>Pri nahrávaní sa zvuk z mikrofónu odoberie ešte pred filtrom a zosilnením a uloží ako samostatný WAV vedľa nahrávky. Nahrávka, ktorú ste počuli, ostáva filtrovaná. Ukladanie kópie môžete v Nastaveniach vypnúť, jej zdieľanie je súčasťou Pro.</p></div>
     <div class="card"><h3>Filter pásma</h3><p>Zvon prepúšťa pásmo 20–220 Hz (nízke zvuky), membrána pásmo 100–1200 Hz (vyššie zvuky). Filter zvýrazní to, čo sa pri posluchu učí počuť, a potlačí zvyšok.</p></div>
+    <div class="card"><h3>Vlastné pásmo (Pro)</h3><p>Namiesto filtrov Zvon, Membrána a Široké si môžete nastaviť vlastné pásmo: dolnú hranicu v rozsahu 20–400 Hz a hornú v rozsahu 150–2500 Hz. Kým je vlastné pásmo zapnuté, redukcia šumu pracuje bez kalibrácie v tichu.</p></div>
     <div class="card"><h3>Zosilnenie</h3><p>Automatické alebo ručné zosilnenie dorovná slabý signál. Limiter v zosilnení chráni uši pred prudkým nárazom.</p></div>
     <div class="card"><h3>Redukcia šumu</h3><p>Po kalibrácii v tichu Ausculta odčíta šum prostredia a stlmí nárazy pri pohybe sondy.</p></div>
     <div class="card"><h3>Zobrazenie</h3><p>Zvuková vlna a frekvenčné spektrum v reálnom čase. Sú to obrazy zvuku, ako v programoch na úpravu zvuku, nie zdravotné hodnoty.</p></div>
-    <div class="card"><h3>Odposluch a nahrávky</h3><p>Upravený zvuk počujete v slúchadlách. Nahrávky sa ukladajú ako WAV s miestom posluchu a poznámkou, prehrať a zdieľať ich môžete kedykoľvek.</p></div>
+    <div class="card"><h3>Odposluch a nahrávky</h3><p>Upravený zvuk počujete v slúchadlách. Nahrávky sa ukladajú ako WAV s miestom posluchu a poznámkou, prehrať a zdieľať ich môžete kedykoľvek. Verzia zadarmo uchová 3 nahrávky, Pro neobmedzený počet.</p></div>
   </div>
 </section>
 
@@ -54,9 +63,37 @@
 </section>
 
 <section class="reveal">
+  <span class="eyebrow">Atlas</span>
+  <h2>Ako sú pripravené ukážky v atlase</h2>
+  <p class="lead">Atlas obsahuje krátke úryvky z otvorených výučbových databáz. Každý úryvok prešiel rovnakou úpravou, aby sa ukážky dali pohodlne počúvať a porovnávať.</p>
+  <div class="grid steps">
+    <div class="card"><h3>Výber úryvku</h3><p>Z nahrávky sa vyberie úsek dlhý 10–12 s bez reči, plaču, trenia a bez presýteného (orezaného) signálu.</p></div>
+    <div class="card"><h3>Filtrovanie</h3><p>Odstráni sa jednosmerná zložka a hlboký brum: horný priepust 20 Hz pri zvukoch srdca a 80 Hz pri dýchaní. Filtre majú nulovú fázu, takže zvuk sa časovo neposunie.</p></div>
+    <div class="card"><h3>Prevzorkovanie</h3><p>Ukážky sa uložia s 8000 vzorkami za sekundu, 16 bitov, mono. Na zvuky srdca a dýchania to stačí a aplikácia ostane malá.</p></div>
+    <div class="card"><h3>Hlasitosť</h3><p>Všetky ukážky sa zjednotia na rovnakú priemernú hlasitosť. Špičky sa nikdy neorezávajú: ak by hrozilo orezanie, ukážka ostane radšej o niečo tichšia.</p></div>
+    <div class="card"><h3>Nábeh a dobeh</h3><p>Začiatok a koniec ukážky sa plynulo zosilní a zoslabí (100 ms), aby prehrávanie nezačínalo ani nekončilo cvaknutím.</p></div>
+  </div>
+  <div class="card tablecard"><table>
+  <tr><th>Databáza</th><th>Čo z nej je v atlase</th><th>Licencia</th></tr>
+  <tr><td><a href="https://physionet.org/content/circor-heart-sound/1.0.3/">CirCor DigiScope</a> (PhysioNet)</td><td>zvuky srdca z rôznych miest posluchu (detské záznamy)</td><td><a href="https://opendatacommons.org/licenses/by/1-0/">ODC-By 1.0</a></td></tr>
+  <tr><td><a href="https://physionet.org/content/ephnogram/1.0.0/">EPHNOGRAM</a> (PhysioNet)</td><td>zvuk srdca a ukážky EKG so zvukom (dospelí v pokoji)</td><td><a href="https://opendatacommons.org/licenses/by/1-0/">ODC-By 1.0</a></td></tr>
+  <tr><td><a href="https://data.mendeley.com/datasets/jwyy9np4gv/3">KAUH</a> (Mendeley Data)</td><td>dýchanie (dospelí)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
+  <tr><td><a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/SPRSound">SPRSound</a></td><td>dýchanie (detské záznamy)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
+  </table></div>
+  <p class="muted">Pri každej ukážke appka uvádza zdroj a licenciu, úplné citácie sú v appke v časti O aplikácii, autorstvo a zdroje › Atlas: zdroje a licencie. Autori databáz s Auscultou nesúvisia a nepodporujú ju. Popisy ukážok sú učebnicové a Ausculta ukážky s vašou nahrávkou neporovnáva: porovnávate vy, sluchom.</p>
+</section>
+
+<section class="reveal">
+  <span class="eyebrow">EKG + zvuk</span>
+  <h2>EKG a zvuk srdca na jednej časovej osi</h2>
+  <div class="card"><p>Ukážky pochádzajú z databázy EPHNOGRAM, v ktorej sa EKG a zvuk srdca nahrávali naraz u dospelých v pokoji. Ausculta sama EKG nesníma. Obe krivky vidíte pod sebou na spoločnej časovej osi a pri prehrávaní sa po nich posúva značka času, takže sledujete, ako po elektrickom podráždení prichádzajú ozvy. Zvuk srdca je zbavený sieťového brumu (50 Hz a jeho násobky), obmedzený na pásmo do 1 kHz a uložený so 4000 vzorkami za sekundu. EKG je v pásme 0,5–40 Hz s 250 vzorkami za sekundu. Všetky filtre majú nulovú fázu, preto sa krivky voči sebe časovo neposunú.</p></div>
+  <div class="card notice" style="margin-top:20px"><p class="muted" style="margin:0">V ukážke sa nič nemeria ani nevyhodnocuje: Ausculta nezobrazuje intervaly ani žiadne čísla a krivku EKG nehodnotí. Tvar EKG závisí od umiestnenia elektród.</p></div>
+</section>
+
+<section class="reveal">
   <span class="eyebrow">Hranice</span>
   <h2>Čo Ausculta nerobí</h2>
-  <div class="card notice"><p class="muted" style="margin:0">Ausculta nezobrazuje žiadne zdravotné hodnoty, nerozpoznáva ani nepomenúva zvuky, nevytvára diagnózy a nedáva odporúčania. Nie je zdravotnícka pomôcka, nič nemeria ani nediagnostikuje a nenahrádza vyšetrenie lekárom. Svoj posluch si porovnávate sami, napríklad s ukážkami z učebnice. Pri zdravotných ťažkostiach sa vždy obráťte na lekára.</p></div>
+  <div class="card notice"><p class="muted" style="margin:0">Ausculta nezobrazuje žiadne zdravotné hodnoty, nerozpoznáva ani nepomenúva zvuky vo vašich nahrávkach, nevytvára diagnózy a nedáva odporúčania. Nie je zdravotnícka pomôcka, nič nemeria ani nediagnostikuje a nenahrádza vyšetrenie lekárom. Svoj posluch si porovnávate sami, napríklad s ukážkami v atlase alebo v učebnici. Pri zdravotných ťažkostiach sa vždy obráťte na lekára.</p></div>
 </section>
 
 <section class="reveal">
