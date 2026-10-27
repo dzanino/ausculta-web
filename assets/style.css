@@ -161,3 +161,17 @@ main > section.story{margin-top:70px}
 nav a.lang{margin-left:18px;padding:5px 10px;border-radius:999px;border:1px solid var(--stroke);font-size:12.5px;letter-spacing:.04em;color:var(--muted)}
 nav a.lang b{color:var(--ink);font-weight:700}
 @media (max-width:900px){nav{display:flex;align-items:center;gap:8px}nav a.cta,nav a.lang{margin-left:0}nav a.lang{display:inline-block}}
+
+/* ---------- app screenshots (2.1 atlas) ---------- */
+.phone .screen.shot{padding:0;background:#070c1c}
+.phone .screen.shot img{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:0}
+.device{justify-self:center;width:min(270px,72vw);padding:9px;border-radius:44px;background:linear-gradient(160deg,#2a3550,#0d1324 40%,#1b2540);box-shadow:0 40px 90px -40px rgba(64,214,230,.45),0 0 0 1px rgba(255,255,255,.08)}
+.device img{width:100%;border-radius:36px}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1000px){.grid.four{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid.four{grid-template-columns:1fr}}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:22px;max-width:940px;margin:28px auto}
+.shots figure{margin:0}
+.shots .device{width:100%;padding:6px;border-radius:30px}
+.shots .device img{border-radius:25px}
+.shots figcaption{margin-top:10px;text-align:center;font-size:14px;color:var(--muted);font-weight:600}

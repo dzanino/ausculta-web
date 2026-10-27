@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Technické info - Ako Ausculta funguje | Breathune</title>
-<meta name="description" content="Stručný technický opis aplikácie Ausculta: filtrovanie pásma, zosilnenie, redukcia šumu, zvuková vlna a spektrum, nefiltrovaná kópia, spracovanie ukážok v atlase a ukážky EKG so zvukom.">
+<meta name="description" content="Ako vzniká atlas aplikácie Ausculta: výber ukážok z otvorených databáz, licencie, úprava zvuku, popisy, kvíz, porovnanie a ukážky EKG so zvukom srdca. Appka nepoužíva mikrofón a nič nemeria.">
 <meta name="theme-color" content="#060a18">
 <meta property="og:title" content="Technické info - Ako Ausculta funguje | Breathune">
-<meta property="og:description" content="Stručný technický opis aplikácie Ausculta: filtrovanie pásma, zosilnenie, redukcia šumu, zvuková vlna a spektrum, nefiltrovaná kópia, spracovanie ukážok v atlase a ukážky EKG so zvukom.">
+<meta property="og:description" content="Ako vzniká atlas aplikácie Ausculta: výber ukážok z otvorených databáz, licencie, úprava zvuku, popisy, kvíz, porovnanie a ukážky EKG so zvukom srdca. Appka nepoužíva mikrofón a nič nemeria.">
 <meta property="og:image" content="assets/icon.png">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
@@ -26,41 +26,13 @@
 <section class="pagehead reveal" style="max-width:820px">
   <span class="eyebrow">Technické info</span>
   <h1>Ako Ausculta <span class="grad">funguje</span></h1>
-  <p class="lead">Stručný opis, čo sa so zvukom deje od mikrofónu po slúchadlá, a odkiaľ sú ukážky v atlase. Ausculta je edukačná pomôcka: zvuk zosilní, odfiltruje a zobrazí. Nič nemeria a nič nehodnotí.</p>
-</section>
-
-<section class="reveal">
-  <span class="eyebrow">Cesta zvuku</span>
-  <h2>Od mikrofónu po slúchadlá</h2>
-  <div class="grid steps">
-    <div class="card"><h3>Snímanie</h3><p>Hlavná je sonda iPhone: spodný mikrofón v plnej kvalite (48 kHz), bez hlasového spracovania. Sonda AirPod sa ponúka tam, kde iOS dá vysokokvalitné spojenie s mikrofónom (iOS 26, AirPods Pro 2 / Pro 3, AirPods 4, mimo EÚ). V EÚ sa neponúka, použite sondu iPhone.</p></div>
-    <div class="card"><h3>Nefiltrovaná kópia</h3><p>Pri nahrávaní sa zvuk z mikrofónu odoberie ešte pred filtrom a zosilnením a uloží ako samostatný WAV vedľa nahrávky. Nahrávka, ktorú ste počuli, ostáva filtrovaná. Ukladanie kópie môžete v Nastaveniach vypnúť, jej zdieľanie je súčasťou Pro.</p></div>
-    <div class="card"><h3>Filter pásma</h3><p>Zvon prepúšťa pásmo 20–220 Hz (nízke zvuky), membrána pásmo 100–1200 Hz (vyššie zvuky). Filter zvýrazní to, čo sa pri posluchu učí počuť, a potlačí zvyšok.</p></div>
-    <div class="card"><h3>Vlastné pásmo (Pro)</h3><p>Namiesto filtrov Zvon, Membrána a Široké si môžete nastaviť vlastné pásmo: dolnú hranicu v rozsahu 20–400 Hz a hornú v rozsahu 150–2500 Hz. Kým je vlastné pásmo zapnuté, redukcia šumu pracuje bez kalibrácie v tichu.</p></div>
-    <div class="card"><h3>Zosilnenie</h3><p>Automatické alebo ručné zosilnenie dorovná slabý signál. Limiter v zosilnení chráni uši pred prudkým nárazom.</p></div>
-    <div class="card"><h3>Redukcia šumu</h3><p>Po kalibrácii v tichu Ausculta odčíta šum prostredia a stlmí nárazy pri pohybe sondy.</p></div>
-    <div class="card"><h3>Zobrazenie</h3><p>Zvuková vlna a frekvenčné spektrum v reálnom čase. Sú to obrazy zvuku, ako v programoch na úpravu zvuku, nie zdravotné hodnoty.</p></div>
-    <div class="card"><h3>Odposluch a nahrávky</h3><p>Upravený zvuk počujete v slúchadlách. Nahrávky sa ukladajú ako WAV s miestom posluchu a poznámkou, prehrať a zdieľať ich môžete kedykoľvek. Verzia zadarmo uchová 3 nahrávky, Pro neobmedzený počet.</p></div>
-  </div>
-</section>
-
-<section class="reveal">
-  <span class="eyebrow">Kvalita signálu</span>
-  <h2>Upozornenia na rušivé vplyvy</h2>
-  <div class="card"><p>Ausculta ohlási, keď zvuk ruší pohyb sondy, tras ruky, reč, hluk v miestnosti alebo slabý kontakt s kožou. Sú to hlásenia o kvalite zvuku, aby ste vedeli, že treba sondu držať pokojnejšie alebo ju lepšie pritlačiť. Nehovoria nič o vašom zdraví.</p></div>
+  <p class="lead">Ausculta je atlas nahratých učebnicových ukážok na učenie sa auskultácie. Táto stránka opisuje, odkiaľ ukážky pochádzajú, ako sú upravené a popísané a ako fungujú kvíz a porovnanie. Appka nepoužíva mikrofón, nič nemeria a nič nevyhodnocuje.</p>
 </section>
 
 <section class="reveal">
   <span class="eyebrow">Atlas</span>
-  <h2>Ako sú pripravené ukážky v atlase</h2>
-  <p class="lead">Atlas obsahuje krátke úryvky z otvorených výučbových databáz. Každý úryvok prešiel rovnakou úpravou, aby sa ukážky dali pohodlne počúvať a porovnávať.</p>
-  <div class="grid steps">
-    <div class="card"><h3>Výber úryvku</h3><p>Z nahrávky sa vyberie úsek dlhý 10–12 s bez reči, plaču, trenia a bez presýteného (orezaného) signálu.</p></div>
-    <div class="card"><h3>Filtrovanie</h3><p>Odstráni sa jednosmerná zložka a hlboký brum: horný priepust 20 Hz pri zvukoch srdca a 80 Hz pri dýchaní. Filtre majú nulovú fázu, takže zvuk sa časovo neposunie.</p></div>
-    <div class="card"><h3>Prevzorkovanie</h3><p>Ukážky sa uložia s 8000 vzorkami za sekundu, 16 bitov, mono. Na zvuky srdca a dýchania to stačí a aplikácia ostane malá.</p></div>
-    <div class="card"><h3>Hlasitosť</h3><p>Všetky ukážky sa zjednotia na rovnakú priemernú hlasitosť. Špičky sa nikdy neorezávajú: ak by hrozilo orezanie, ukážka ostane radšej o niečo tichšia.</p></div>
-    <div class="card"><h3>Nábeh a dobeh</h3><p>Začiatok a koniec ukážky sa plynulo zosilní a zoslabí (100 ms), aby prehrávanie nezačínalo ani nekončilo cvaknutím.</p></div>
-  </div>
+  <h2>Odkiaľ sú ukážky</h2>
+  <p class="lead">Atlas obsahuje 35 zvukových ukážok (14 srdce, 16 pľúca, 5 brucho) a 4 ukážky EKG so zvukom srdca. Všetky pochádzajú z otvorených výskumných databáz, ktoré dovoľujú ďalšie použitie s uvedením autorov; jedna ukážka črevných zvukov je zo zvukovej knižnice freesound.org. Ukážky sú súčasťou appky, nič sa nesťahuje z internetu.</p>
   <div class="card tablecard"><table>
   <tr><th>Databáza</th><th>Čo z nej je v atlase</th><th>Licencia</th></tr>
   <tr><td><a href="https://physionet.org/content/circor-heart-sound/1.0.3/">CirCor DigiScope</a> (PhysioNet)</td><td>zvuky srdca z rôznych miest posluchu (detské záznamy)</td><td><a href="https://opendatacommons.org/licenses/by/1-0/">ODC-By 1.0</a></td></tr>
@@ -70,31 +42,75 @@
   <tr><td><a href="https://gitlab.com/techsupportHF/HF_Lung_V1">HF_Lung_V1</a></td><td>dýchanie (dospelí)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
   <tr><td><a href="https://archive.ics.uci.edu/dataset/1202">HLS-CMDS</a> (UCI)</td><td>zvuky srdca z klinickej výučbovej figuríny</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
   <tr><td><a href="https://data.mendeley.com/datasets/jfbdvjw6sf/1">JUST Heart Sound Regurgitation</a> (Mendeley Data)</td><td>zvuky srdca so šelestom (dospelí)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
-  <tr><td><a href="https://doi.org/10.5281/zenodo.22676591">SMART-Ped</a> (Zenodo)</td><td>tracheálne dýchanie (deti a dospievajúci, mikrofón smartfónu)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
+  <tr><td><a href="https://doi.org/10.5281/zenodo.22676591">SMART-Ped</a> (Zenodo)</td><td>tracheálne dýchanie (deti a dospievajúci)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
   <tr><td><a href="https://doi.org/10.6084/m9.figshare.28595741.v1">Bowel sounds signal</a> (Mansour, figshare)</td><td>črevné zvuky (zdraví dospelí, senzor vedľa pupka)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
   <tr><td><a href="https://doi.org/10.6084/m9.figshare.25772346.v1">Bowel Sounds Audio Files</a> (Rulli a kol., figshare)</td><td>črevné zvuky (fyziologická peristaltika)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
   <tr><td><a href="https://freesound.org/s/785273/">freesound.org, zvuk 785273</a> (logancircle2)</td><td>črevné zvuky po jedle (kontaktný mikrofón, nie auskultácia)</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
   </table></div>
-  <p class="muted">Pri každej ukážke appka uvádza zdroj a licenciu, úplné citácie sú v appke v časti O aplikácii, autorstvo a zdroje › Atlas: zdroje a licencie. Autori databáz s Auscultou nesúvisia a nepodporujú ju. Popisy ukážok sú učebnicové a Ausculta ukážky s vašou nahrávkou neporovnáva: porovnávate vy, sluchom.</p>
+  <p class="muted">Pri každej ukážke appka uvádza zdroj a licenciu, úplné citácie sú v appke v časti O aplikácii, autorstvo a zdroje › Atlas: zdroje a licencie. Autori databáz s Auscultou nesúvisia a nepodporujú ju.</p>
+</section>
+
+<section class="reveal">
+  <span class="eyebrow">Výber</span>
+  <h2>Ako sa ukážky vyberajú</h2>
+  <div class="grid">
+    <div class="card"><h3>Označenie od autorov</h3><p>Ukážky sa vyberajú podľa označenia, ktoré k nahrávkam dali ich autori, napríklad šelest, piskoty, chrôpky, stridor alebo fyziologická peristaltika. Ak má databáza pri prídavných zvukoch časové značky, úsek sa vyberá podľa nich.</p></div>
+    <div class="card"><h3>Čistý úsek</h3><p>Z nahrávky sa vyberie úsek dlhý 10-12 s, ktorý sa prezrie ako priebeh a spektrogram. Vyradia sa úseky s rečou, plačom, trením, tónmi prístrojov, výrazným šumom alebo s presýteným (orezaným) signálom.</p></div>
+    <div class="card"><h3>Jasné označenie</h3><p>Ukážky z klinickej výučbovej figuríny majú „figurína“ v názve a ukážka zo zvukovej knižnice je označená ako nahrávka kontaktným mikrofónom, nie auskultácia. Ak databáza neuvádza miesto posluchu, appka ho neuvádza ani v ukážke.</p></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <span class="eyebrow">Úprava zvuku</span>
+  <h2>Ako sú ukážky upravené</h2>
+  <p class="lead">Každý úryvok prešiel rovnakou úpravou, aby sa ukážky dali pohodlne počúvať a porovnávať. Úpravy sa týkajú len hotových nahrávok z databáz.</p>
+  <div class="grid steps">
+    <div class="card"><h3>Výrez</h3><p>Z pôvodnej nahrávky sa použije len vybraný úsek dlhý 10-12 s.</p></div>
+    <div class="card"><h3>Hlboký brum</h3><p>Odstráni sa jednosmerná zložka a hlboký brum: horný priepust 20 Hz pri zvukoch srdca, 80 Hz pri dýchaní a 50 Hz pri črevných zvukoch. Úprava má nulovú fázu, takže zvuk sa časovo neposunie.</p></div>
+    <div class="card"><h3>Prevzorkovanie</h3><p>Ukážky sa uložia s 8000 vzorkami za sekundu, 16 bitov, mono. Na zvuky srdca, dýchania a čriev to stačí a aplikácia ostane malá.</p></div>
+    <div class="card"><h3>Hlasitosť</h3><p>Všetky ukážky sa zjednotia na rovnakú priemernú hlasitosť. Špičky sa nikdy neorezávajú: ak by hrozilo orezanie, ukážka ostane radšej o niečo tichšia.</p></div>
+    <div class="card"><h3>Nábeh a dobeh</h3><p>Začiatok a koniec ukážky sa plynulo zosilní a zoslabí (100 ms), aby prehrávanie nezačínalo ani nekončilo cvaknutím.</p></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <span class="eyebrow">Popisy</span>
+  <h2>Ako vznikajú popisy</h2>
+  <div class="card"><p>Každá ukážka má názov a dve až tri vety popisu: čo v nahrávke počuť a ako sa to v učebniciach nazýva, napríklad kde v srdcovom cykle leží šelest, či sú chrôpky jemné alebo hrubé a v ktorej fáze dýchania sa ozývajú. Názvy pľúcnych zvukov sa držia odporúčanej terminológie dýchacích zvukov (CORSA): piskoty, vrzgoty, chrôpky, stridor. Popisy vychádzajú z označenia, ktoré k nahrávke dali autori databázy, a z učebníc; neopisujú konkrétneho človeka a neuvádzajú vek ani diagnózu z pôvodného záznamu. Vlastnosť databázy sa spomenie len vtedy, keď niečo vysvetľuje, napríklad rýchlejšie údery v detských záznamoch.</p></div>
+</section>
+
+<section class="reveal">
+  <span class="eyebrow">Precvičovanie</span>
+  <h2>Kvíz a porovnanie</h2>
+  <div class="grid">
+    <div class="card"><h3>Kvíz</h3><p>Kvíz vyberie 10 ukážok z atlasu (bez Pro len z voľných), postupne ich prehrá a pri každej ponúkne najviac štyri názvy typov zvuku, z ktorých jeden je správny; ostatné sú prednostne z tej istej sekcie. Po odpovedi hneď vidíte správny typ a učebnicový popis, na konci počet správnych odpovedí. Hodnotia sa len vaše odpovede.</p></div>
+    <div class="card"><h3>Porovnať dve</h3><p>Vyberiete dve ukážky (A a B) a prehráte ich vedľa seba, každú s popisom. Hodí sa na dvojice, ktoré sa ľahko zamenia: jemné a hrubé chrôpky, piskoty a vrzgoty, normálne ozvy a šelest.</p></div>
+    <div class="card"><h3>Prehľad vypočutých</h3><p>Appka si v zariadení pamätá, ktoré ukážky ste už prehrali. Pri každej sekcii vidíte „Vypočuté X z Y“ a filter „Ešte nepočuté“ zobrazí len tie, ktoré vám chýbajú. Nič z toho neopúšťa zariadenie.</p></div>
+  </div>
 </section>
 
 <section class="reveal">
   <span class="eyebrow">EKG + zvuk</span>
   <h2>EKG a zvuk srdca na jednej časovej osi</h2>
-  <div class="card"><p>Ukážky pochádzajú z databázy EPHNOGRAM, v ktorej sa EKG a zvuk srdca nahrávali naraz u dospelých v pokoji. Ausculta sama EKG nesníma. Obe krivky vidíte pod sebou na spoločnej časovej osi a pri prehrávaní sa po nich posúva značka času, takže sledujete, ako po elektrickom podráždení prichádzajú ozvy. Zvuk srdca je zbavený sieťového brumu (50 Hz a jeho násobky), obmedzený na pásmo do 1 kHz a uložený so 4000 vzorkami za sekundu. EKG je v pásme 0,5–40 Hz s 250 vzorkami za sekundu. Všetky filtre majú nulovú fázu, preto sa krivky voči sebe časovo neposunú.</p></div>
+  <div class="card"><p>Štyri ukážky pochádzajú z databázy EPHNOGRAM, v ktorej sa EKG a zvuk srdca nahrávali naraz u dospelých v pokoji. Obe krivky vidíte pod sebou na spoločnej časovej osi a pri prehrávaní sa po nich posúva značka času, takže sledujete, ako po elektrickom podráždení prichádzajú ozvy. Zvuk srdca je zbavený sieťového brumu (50 Hz a jeho násobky), obmedzený na pásmo do 1 kHz a uložený so 4000 vzorkami za sekundu. EKG je v pásme 0,5-40 Hz s 250 vzorkami za sekundu. Všetky úpravy majú nulovú fázu, preto sa krivky voči sebe časovo neposunú.</p></div>
   <div class="card notice" style="margin-top:20px"><p class="muted" style="margin:0">V ukážke sa nič nemeria ani nevyhodnocuje: Ausculta nezobrazuje intervaly ani žiadne čísla a krivku EKG nehodnotí. Tvar EKG závisí od umiestnenia elektród.</p></div>
 </section>
 
 <section class="reveal">
   <span class="eyebrow">Hranice</span>
   <h2>Čo Ausculta nerobí</h2>
-  <div class="card notice"><p class="muted" style="margin:0">Ausculta nezobrazuje žiadne zdravotné hodnoty, nerozpoznáva ani nepomenúva zvuky vo vašich nahrávkach, nevytvára diagnózy a nedáva odporúčania. Nie je zdravotnícka pomôcka, nič nemeria ani nediagnostikuje a nenahrádza vyšetrenie lekárom. Svoj posluch si porovnávate sami, napríklad s ukážkami v atlase alebo v učebnici. Kvíz v atlase hodnotí len odpoveď, ktorú vyberiete, nie zvuk z vášho tela. Pri zdravotných ťažkostiach sa vždy obráťte na lekára.</p></div>
+  <div class="card notice"><p class="muted" style="margin:0">Ausculta nepoužíva mikrofón a nesníma žiadny zvuk ani signál z tela. Nič nemeria, nezobrazuje zdravotné hodnoty, nerozpoznáva zvuky, nevytvára diagnózy a nedáva odporúčania. Kvíz hodnotí len odpoveď, ktorú vyberiete pri ukážke z atlasu. Ausculta nie je zdravotnícka pomôcka a nenahrádza vyšetrenie lekárom. Pri zdravotných ťažkostiach sa vždy obráťte na lekára.</p></div>
 </section>
 
 <section class="reveal">
-  <span class="eyebrow">Ilustrácie</span>
-  <h2>Sonda a miesta posluchu</h2>
-  <div class="grid"><div class="card"><img src="assets/img/probe-iphone.svg" alt="Sonda iPhone"><h3>Sonda iPhone</h3></div><div class="card"><img src="assets/img/sites.svg" alt="Miesta posluchu"><h3>Miesta posluchu</h3></div><div class="card"><img src="assets/img/bell-kit.svg" alt="Zvon"><h3>Zvon z domácich pomôcok</h3></div></div>
+  <span class="eyebrow">Literatúra</span>
+  <h2>Z čoho texty vychádzajú</h2>
+  <div class="card"><p>Sovijärvi ARA, Dalmasso F, Vanderschoot J a kol. Definition of terms for applications of respiratory sounds. Eur Respir Rev. 2000;10(77):597-610 (CORSA).<br>
+  Bohadana A, Izbicki G, Kraman SS. Fundamentals of lung auscultation. N Engl J Med. 2014;370(8):744-751.<br>
+  Pasterkamp H, Kraman SS, Wodicka GR. Respiratory sounds: advances beyond the stethoscope. Am J Respir Crit Care Med. 1997;156(3):974-987.<br>
+  Mangione S, Nieman LZ. Cardiac auscultatory skills of internal medicine and family practice trainees. JAMA. 1997;278(9):717-722.<br>
+  Barrett MJ, Lacey CS, Sekara AE, Linden EA, Gracely EJ. Mastering cardiac murmurs: the power of repetition. Chest. 2004;126(2):470-475.</p></div>
+  <p class="muted">Úplné citácie databáz sú v appke v časti Atlas: zdroje a licencie, zdroje k časti Prečo auskultácia sú na <a href="index.html#preco">hlavnej stránke</a>.</p>
 </section>
 </main>
 <footer><div class="wrap">
