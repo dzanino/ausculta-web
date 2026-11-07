@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Ausculta - atlas auskultácie | Breathune</title>
-<meta name="description" content="Ausculta je vzdelávací atlas auskultácie: učebnicové ukážky zvukov srdca, pľúc a brucha z otvorených databáz, ukážky EKG so zvukom srdca, kvíz, porovnanie dvoch ukážok a návod pre stetoskop. Nepoužíva mikrofón, nič nemeria. Nie je zdravotnícka pomôcka.">
+<meta name="description" content="Ausculta je vzdelávací atlas auskultácie: učebnicové ukážky zvukov srdca, pľúc a brucha z otvorených databáz, ukážky EKG so zvukom srdca, mapa miest auskultácie, prípady, kvíz, denný tréning s rozloženým opakovaním a návod pre stetoskop. Nepoužíva mikrofón, nič nemeria. Nie je zdravotnícka pomôcka.">
 <meta name="theme-color" content="#060a18">
 <meta property="og:title" content="Ausculta - atlas auskultácie | Breathune">
-<meta property="og:description" content="Ausculta je vzdelávací atlas auskultácie: učebnicové ukážky zvukov srdca, pľúc a brucha z otvorených databáz, ukážky EKG so zvukom srdca, kvíz, porovnanie dvoch ukážok a návod pre stetoskop. Nepoužíva mikrofón, nič nemeria. Nie je zdravotnícka pomôcka.">
+<meta property="og:description" content="Ausculta je vzdelávací atlas auskultácie: učebnicové ukážky zvukov srdca, pľúc a brucha z otvorených databáz, ukážky EKG so zvukom srdca, mapa miest auskultácie, prípady, kvíz, denný tréning s rozloženým opakovaním a návod pre stetoskop. Nepoužíva mikrofón, nič nemeria. Nie je zdravotnícka pomôcka.">
 <meta property="og:image" content="assets/icon.png">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="alternate" hreflang="sk" href="index.html"><link rel="alternate" hreflang="en" href="en/index.html">
+
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
 <script type="application/ld+json" id="ld-ausculta">
 {
@@ -27,12 +27,14 @@
    "applicationCategory": "EducationalApplication",
    "applicationSubCategory": "Medical education",
    "operatingSystem": "iOS",
-   "softwareVersion": "2.1",
+   "softwareVersion": "2.2",
    "url": "https://dzanino.github.io/ausculta-web/",
    "downloadUrl": "https://apps.apple.com/app/id6819630118",
    "inLanguage": [
     "sk",
-    "en"
+    "en",
+    "cs",
+    "de"
    ],
    "isAccessibleForFree": true,
    "offers": {
@@ -65,6 +67,7 @@
  ]
 }
 </script>
+<link rel="alternate" hreflang="sk" href="index.html"><link rel="alternate" hreflang="en" href="en/index.html">
 </head>
 <body>
 <header class="nav"><div class="wrap">
@@ -78,7 +81,7 @@
   <div class="reveal">
     <span class="eyebrow">Ausculta · lat. auscultare - pozorne počúvať</span>
     <h1>Učte sa auskultáciu<br><span class="grad">sluchom.</span></h1>
-    <p class="lead">Ausculta je vzdelávací atlas na učenie sa auskultácie. Obsahuje 35 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených výskumných databáz, každú s popisom, zdrojom a licenciou, a 4 ukážky EKG so zvukom srdca. Precvičíte sa v kvíze a pri porovnaní dvoch ukážok, návod pripomenie, kde a ako počúvať stetoskopom. Appka nepoužíva mikrofón a nič nemeria. Na stiahnutie zadarmo.</p>
+    <p class="lead">Ausculta je vzdelávací atlas na učenie sa auskultácie. Obsahuje 42 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených výskumných databáz, každú s popisom, zdrojom a licenciou, a 4 ukážky EKG so zvukom srdca. Ukážky nájdete aj na mape miest auskultácie, precvičíte sa v kvíze, v krátkych prípadoch a v dennom tréningu s rozloženým opakovaním, návod pripomenie, kde a ako počúvať stetoskopom. Appka nepoužíva mikrofón a nič nemeria. Je v slovenčine, angličtine, češtine a nemčine, na stiahnutie zadarmo.</p>
     <div class="actions">
       <a class="btn" href="#ako">Ako sa učiť →</a>
       <a class="btn ghost" href="methodology.html">Technické info</a>
@@ -87,7 +90,8 @@
       <span class="pill coral"><i style="background:var(--coral)"></i>Zvuky srdca</span>
       <span class="pill mint"><i style="background:var(--mint)"></i>Zvuky pľúc</span>
       <span class="pill" style="color:var(--amber)"><i style="background:var(--amber)"></i>Črevné zvuky</span>
-      <span class="pill violet"><i style="background:var(--violet)"></i>Kvíz</span>
+      <span class="pill teal"><i style="background:var(--teal)"></i>Mapa miest</span>
+      <span class="pill violet"><i style="background:var(--violet)"></i>Kvíz a tréning</span>
     </div>
   </div>
 
@@ -100,9 +104,9 @@
 <div class="card notice reveal" style="margin-top:20px"><b>Dôležité.</b> <span class="muted">Ausculta je edukačná pomôcka na učenie sa počúvať. Nie je zdravotnícka pomôcka v zmysle nariadenia (EÚ) 2017/745, nič nemeria ani nediagnostikuje a nenahrádza vyšetrenie lekárom. Pri zdravotných ťažkostiach sa vždy obráťte na lekára.</span></div>
 
 <div class="band reveal" style="margin-top:20px">
-  <div><b class="grad">35</b><span>učebnicových zvukových ukážok</span></div>
+  <div><b class="grad">42</b><span>učebnicových zvukových ukážok</span></div>
   <div><b class="grad">4</b><span>ukážky EKG so zvukom srdca</span></div>
-  <div><b class="grad">12</b><span>ukážok zadarmo, Pro odomkne ďalších 23</span></div>
+  <div><b class="grad">12</b><span>ukážok zadarmo, Pro odomkne ďalších 30</span></div>
   <div><b class="grad">0</b><span>bajtov na server</span></div>
 </div>
 
@@ -119,7 +123,7 @@
 <section id="preco" class="reveal">
   <span class="eyebrow">Prečo auskultácia</span>
   <h2>Zručnosť, ktorá sa z výučby vytráca</h2>
-  <p class="lead">Auskultácia ostáva prvou voľbou pri lôžku aj v teréne: je lacná, okamžitá a dostupná aj tam, kde echokardiografia nie je. Jej zvládnutie však vyžaduje veľa opakovaní a príležitostí počúvať pri lôžku ubúda. Ausculta vám pomôže precvičiť si sluch: atlas učebnicových ukážok z otvorených databáz, ktoré si môžete púšťať dookola, a kvíz, v ktorom zistíte, čo už spoznáte.</p>
+  <p class="lead">Auskultácia ostáva prvou voľbou pri lôžku aj v teréne: je lacná, okamžitá a dostupná aj tam, kde echokardiografia nie je. Jej zvládnutie však vyžaduje veľa opakovaní a príležitostí počúvať pri lôžku ubúda. Ausculta vám pomôže precvičiť si sluch: atlas učebnicových ukážok z otvorených databáz, ktoré si môžete púšťať dookola, kvíz, v ktorom zistíte, čo už spoznáte, a denný tréning, ktorý vám zvuky vracia s odstupom dní.</p>
   <div class="band" style="margin-top:20px">
     <div><b class="grad">20 %</b><span>srdcových nálezov rozpoznali rezidenti (JAMA 1997)</span></div>
     <div><b class="grad">&lt; 50 %</b><span>pľúcnych nálezov rozpoznali rezidenti (AJRCCM 1999)</span></div>
@@ -128,7 +132,7 @@
   </div>
   <div class="grid">
     <div class="card"><h3>Rozpoznávanie je slabé a s rokmi výcviku sa takmer nelepší</h3><p>Mangione a Nieman testovali 453 lekárov vo výcviku a 88 medikov na 12 srdcových nálezoch nahratých od pacientov: rezidenti internej a rodinnej medicíny ich rozpoznali v priemere 20 % a s rokom výcviku sa to takmer nemenilo. V druhej štúdii (656 lekárov vo výcviku a 194 medikov) rozpoznali rezidenti z 10 pľúcnych nálezov v priemere menej ako polovicu, opäť len s malým zlepšením počas výcviku. Neskorší test 860 účastníkov ukázal, že zručnosť vo vyšetrení srdca sa po 3. ročníku amerického štvorročného štúdia medicíny ďalej nezlepšuje, ani u rezidentov a lekárov z praxe; lepší boli len kardiológovia vo výcviku.</p></div>
-    <div class="card"><h3>Opakovanie funguje</h3><p>Barrett a kolegovia nechali 51 študentov 2. ročníka vypočuť si každý zo štyroch základných šelestov 500-krát: úspešnosť stúpla z 13,5 % na 85 % (so sledovaním) a z 20,9 % na 86,1 % (bez sledovania); kontrolná skupina sa významne nezlepšila (z 24 % na 32 %). Auskultácia je sčasti technická zručnosť, ktorá sa učí opakovaním. Na takéto opakovanie je Ausculta stavaná: atlas, ktorý si pustíte stokrát, a kvíz, ktorý vám ukáže, čo už spoznáte bez popisu.</p></div>
+    <div class="card"><h3>Opakovanie funguje</h3><p>Barrett a kolegovia nechali 51 študentov 2. ročníka vypočuť si každý zo štyroch základných šelestov 500-krát: úspešnosť stúpla z 13,5 % na 85 % (so sledovaním) a z 20,9 % na 86,1 % (bez sledovania); kontrolná skupina sa významne nezlepšila (z 24 % na 32 %). Auskultácia je sčasti technická zručnosť, ktorá sa učí opakovaním. Na takéto opakovanie je Ausculta stavaná: atlas, ktorý si pustíte stokrát, kvíz, ktorý vám ukáže, čo už spoznáte bez popisu, a denný tréning, ktorý vám zvuky vracia v rozložených intervaloch.</p></div>
     <div class="card"><h3>Trend ide dole</h3><p>Na jednom americkom akademickom pracovisku klesalo v rokoch 2008 až 2018 skóre študentov a lekárov vo výcviku v simulačnom teste auskultácie srdca o 0,15 bodu ročne (test so 16 zvukmi, priemer 7,7 bodu; 411 testov, z toho 85 % medici). Echokardiografia auskultáciu nenahradila, doplnila ju: ucho pri lôžku často pomôže rozhodnúť, koho a kedy poslať ďalej.</p></div>
   </div>
   <p class="muted" style="font-size:13px;line-height:1.6">Zdroje: Mangione S, Nieman LZ. JAMA. 1997;278(9):717-722 (PMID 9286830). Mangione S, Nieman LZ. Am J Respir Crit Care Med. 1999;159(4):1119-1124 (doi:10.1164/ajrccm.159.4.9806083). Vukanovic-Criley JM a kol. Arch Intern Med. 2006;166(6):610-616 (doi:10.1001/archinte.166.6.610). Barrett MJ a kol. Chest. 2004;126(2):470-475 (doi:10.1378/chest.126.2.470). Zhang NS a kol. Am Heart J. 2025 (doi:10.1016/j.ahj.2025.03.006). Overené v PubMede 24. 10. 2026.</p>
@@ -137,12 +141,14 @@
 <section id="ako" class="reveal">
   <span class="eyebrow">Učenie</span>
   <h2>Ako sa s atlasom učiť</h2>
-  <p class="lead">Atlas je postavený na opakovaní: počúvať, čítať popis, preskúšať sa a vracať sa k tomu, čo ešte nesedí.</p>
-  <div class="grid steps four">
+  <p class="lead">Atlas je postavený na opakovaní: počúvať, čítať popis, spomaliť si, čo uniká, preskúšať sa a vracať sa k tomu, čo ešte nesedí.</p>
+  <div class="grid steps">
     <div class="card lift"><h3>Počúvajte s popisom</h3><p>Každú ukážku si v slúchadlách vypočujte niekoľkokrát s otvoreným popisom, kým ju nespoznáte bez čítania. V slúchadlách počuť aj tiché zvuky, napríklad tretiu ozvu alebo jemné chrôpky; ukážky hrajú aj z reproduktora.</p></div>
+    <div class="card lift"><h3>Spomaľte a sledujte krivku</h3><p>Pri rýchlych alebo zložitých ukážkach prepnite rýchlosť na 0,75× alebo 0,5×: výška tónu sa nezmení, len máte na každú ozvu viac času. Úsek, ktorý vám uniká, si ťahaním po krivke dajte do slučky. Pri označených ukážkach sledujte značky S1 a S2 alebo úseky piskotov a chrôpok.</p></div>
     <div class="card lift"><h3>Preskúšajte sa v kvíze</h3><p>Kvíz prehrá ukážku a vy vyberiete typ zvuku z najviac štyroch názvov. Hneď uvidíte, či ste trafili, a učebnicový popis ukážky. Hodnotia sa len vaše odpovede.</p></div>
+    <div class="card lift"><h3>Prejdite prípad</h3><p>Prípad vás vedie po označených miestach na mape ako pri lôžku: na každom si vypočujete ukážku a pomenujete typ zvuku. Je to spôsob, ako si spojiť zvuk s miestom, kde sa počúva.</p></div>
     <div class="card lift"><h3>Porovnajte dve ukážky</h3><p>Porovnať dve prehrá dve ukážky vedľa seba, napríklad normálne dýchanie a piskoty alebo jemné a hrubé chrôpky. Prehrajte jednu, potom druhú a všímajte si, čím sa líšia.</p></div>
-    <div class="card lift"><h3>Vracajte sa k ukážkam</h3><p>Prehľad „Vypočuté X z Y“ ukáže, koľko ukážok v sekcii ste už počuli, a filter „Ešte nepočuté“ vyberie tie, ktoré vám chýbajú. K ukážkam sa vracajte s odstupom dní: opakovanie je pri auskultácii to, čo funguje.</p></div>
+    <div class="card lift"><h3>Vracajte sa v dennom tréningu</h3><p>Denný tréning vám každý deň pripraví najviac 20 ukážok: najprv tie, ktoré sú na rade na zopakovanie, potom nové. Správne pomenované zvuky sa vracajú s rastúcim odstupom dní, pomýlené hneď v najbližšom tréningu. Prehľad „Vypočuté X z Y“ a filter „Ešte nepočuté“ ukážu, čo vám v atlase ešte chýba.</p></div>
   </div>
   <div class="shots">
     <figure><div class="device"><img src="assets/img/screen-abdomen.jpg" alt="Sekcia Brucho v atlase: normálne črevné zvuky s popisom a zdrojom" loading="lazy"></div><figcaption>Brucho</figcaption></figure>
@@ -156,12 +162,19 @@
   <span class="eyebrow">Funkcie</span>
   <h2>Čo Ausculta ponúka</h2>
   <div class="grid">
-    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6M9 11h4"/></svg></div><h3>Atlas ukážok</h3><p>35 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených výskumných databáz (PhysioNet a ďalšie; jedna ukážka črevných zvukov je zo zvukovej knižnice freesound.org). Pri každej je popis, zdroj a licencia. Prehrávajú sa do slúchadiel alebo z reproduktora.</p></div>
+    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6M9 11h4"/></svg></div><h3>Atlas ukážok</h3><p>42 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených výskumných databáz (PhysioNet a ďalšie; jedna ukážka črevných zvukov je zo zvukovej knižnice freesound.org). Pri každej je popis, zdroj a licencia. Prehrávajú sa do slúchadiel alebo z reproduktora.</p></div>
     <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v8m0 0c-1.5 0-2.5 1-3.5 2.2M12 11c1.5 0 2.5 1 3.5 2.2"/><path d="M8.5 6.5C5 7 3 12 3 16.5c0 2 1.2 3.2 3 3.2 2.6 0 3.5-2 3.5-4.5V9c0-1.5-.4-2.6-1-2.5zM15.5 6.5C19 7 21 12 21 16.5c0 2-1.2 3.2-3 3.2-2.6 0-3.5-2-3.5-4.5V9c0-1.5.4-2.6 1-2.5z" fill="currentColor" fill-opacity=".25"/></svg></div><h3>Srdce, pľúca a brucho</h3><p>Normálne ozvy z rôznych miest posluchu, systolické a diastolické šelesty, tretia a štvrtá ozva; vezikulárne a tracheálne dýchanie, piskoty, vrzgoty, chrôpky a stridor; normálne črevné zvuky a borborygmy. Popis vysvetlí, čo v ukážke počuť.</p></div>
+    <div class="card lift"><div class="chip amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-5 3 10 2.5-7 1.5 2H21"/><path d="M6 19h12"/></svg></div><h3>Nástroje prehrávania</h3><p>Pri každej ukážke krivka nahrávky s bežcom, spomalenie na 0,75× a 0,5× bez zmeny výšky tónu, slučka vybraného úseku (ťahaním po krivke) a filtre Široké, Zvon a Membrána. Pri 20 ukážkach sú na krivke značky S1 a S2 alebo úseky piskotov, chrôpok, vrzgotov, stridoru, nádychu a výdychu prenesené z anotácií zdrojových databáz. Všetko pracuje len s nahrávkou, nič sa nemeria.</p></div>
     <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 0 1 5 1c0 1.7-2.5 2.2-2.5 3.7"/><path d="M12 17h.01"/></svg></div><h3>Kvíz a porovnanie</h3><p>Kvíz prehrá ukážku a vy vyberiete typ zvuku; hneď uvidíte učebnicový popis. Hodnotia sa len vaše odpovede. Porovnať dve prehrá dve ukážky vedľa seba a appka si pamätá, ktoré ukážky ste už počuli.</p></div>
+    <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg></div><h3>Denný tréning</h3><p>Rozložené opakovanie nad ukážkami atlasu: zvuk, ktorý pomenujete správne, sa vráti neskôr (o 1, 3, 7 a potom 14 dní), zvuk, ktorý si pomýlite, príde znova už v najbližšom tréningu. Denná dávka má najviac 20 ukážok, najprv tie na zopakovanie, potom nové. Prehľad ukáže úspešnosť podľa typu zvuku za posledných 30 dní. Priebeh zostáva len v telefóne.</p></div>
     <div class="card lift"><div class="chip coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5h5l1.5-5.5 2 10 1.5-4.5H22"/><path d="M2 18.5c1.25-2.6 2.5-2.6 3.75 0s2.5 2.6 3.75 0 2.5-2.6 3.75 0 2.5 2.6 3.75 0 2.5-2.6 3.75 0"/></svg></div><h3>EKG a zvuk srdca</h3><p>4 ukážky z otvorenej databázy, v ktorej sa EKG a zvuk srdca nahrávali naraz. Vidíte ich pod sebou na jednej časovej osi a pri prehrávaní sledujete, ako po elektrickom podráždení prichádzajú ozvy. V ukážkach sa nič nemeria.</p></div>
     <div class="card lift"><div class="chip teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v5a4 4 0 0 0 8 0V3"/><path d="M9 12v3a5 5 0 0 0 10 0v-2"/><circle cx="19" cy="11" r="2"/></svg></div><h3>Návod pre stetoskop</h3><p>Kde a ako počúvať klasickým stetoskopom: zvon a membrána, tlak, miesta auskultácie srdca a pľúc, štyri kvadranty brucha a ako dlho počúvať. Ako podklad k atlasu.</p></div>
-    <div class="card lift"><div class="chip teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="10" rx="3"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg></div><h3>Súkromie</h3><p>Appka nepoužíva mikrofón, nemá účet ani server, nemá analytiku a nezbiera žiadne údaje. Nákupy rieši App Store.</p></div>
+    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></div><h3>Štyri jazyky</h3><p>Ausculta je v slovenčine, angličtine, češtine a nemčine a riadi sa jazykom iPhonu. Popisy ukážok, kvíz, prípady aj návod sú vo všetkých štyroch jazykoch.</p></div>
+    <div class="card lift"><div class="chip teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="10" rx="3"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg></div><h3>Súkromie</h3><p>Appka nepoužíva mikrofón, nemá účet ani server, nemá analytiku a nezbiera žiadne údaje. Priebeh tréningu zostáva v telefóne. Nákupy rieši App Store.</p></div>
+  </div>
+  <div class="grid two">
+    <div class="card lift"><img src="assets/img/sites.svg" alt="Miesta auskultácie srdca a pľúc na kreslenom hrudníku"><h3>Mapa miest</h3><p>Kreslený hrudník spredu a zozadu a brucho s miestami auskultácie: A aortálne, P pulmonálne, E Erbov bod, T trikuspidálne, M hrot; hrot, bok a báza pľúc, chrbát a priedušnica; miesto vedľa pupka. Ťuknutím na miesto sa otvoria ukážky, ktoré tam boli podľa zdrojovej databázy nahraté, aj s nástrojmi prehrávania. Appka miesto nikdy neodhaduje: ukážky sú len pri miestach, ktoré zdroj uvádza, preto je napríklad Erbov bod zatiaľ bez ukážky.</p></div>
+    <div class="card lift"><div class="chip coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg></div><h3>Prípady</h3><p>Šesť krátkych učebnicových situácií zostavených len z ukážok atlasu: spolužiak a štyri miesta na srdci, dieťa na prehliadke, dieťa s hlučným dýchaním, dospelý s kašľom, dospelý počúvaný zvonom pri dolnom ľavom okraji hrudnej kosti a brucho pred jedlom a po jedle. Prejdete označené miesta, pri každom si vypočujete ukážku a pomenujete typ zvuku; na konci vidíte, čo ste trafili. Prípady nie sú skutoční pacienti a hodnotia sa len vaše odpovede.</p></div>
   </div>
 </section>
 
@@ -185,8 +198,8 @@
   <h2>Zadarmo a Ausculta Pro</h2>
   <p class="lead">Ausculta je na stiahnutie zadarmo. Ausculta Pro je jednorazový nákup v aplikácii, nie predplatné.</p>
   <div class="grid">
-    <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/></svg></div><h3>Zadarmo</h3><p>12 z 35 zvukových ukážok atlasu, kvíz a Porovnať dve z voľných ukážok, všetky 4 ukážky EKG so zvukom srdca, prehľad vypočutých ukážok a celý návod.</p></div>
-    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/></svg></div><h3>Ausculta Pro</h3><p>Odomkne zvyšných 23 ukážok atlasu, ktoré sa potom objavia aj v kvíze a v Porovnať dve. Jednorazový nákup, cenu v miestnej mene ukáže App Store.</p></div>
+    <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/></svg></div><h3>Zadarmo</h3><p>12 zo 42 zvukových ukážok atlasu, všetky 4 ukážky EKG so zvukom srdca, mapa miest, prípady, kvíz, denný tréning a Porovnať dve z voľných ukážok, nástroje prehrávania, prehľad vypočutých ukážok a celý návod.</p></div>
+    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/></svg></div><h3>Ausculta Pro</h3><p>Odomkne zvyšných 30 ukážok atlasu, ktoré sa potom objavia aj na mape, v kvíze, v prípadoch, v dennom tréningu a v Porovnať dve. Jednorazový nákup, cenu v miestnej mene ukáže App Store.</p></div>
   </div>
   <p class="muted">Dobrovoľný príspevok na vývoj a údržbu (Podporiť vývoj) nič neodomyká. Ak chcete, podporíte ním ďalšiu prácu na Ausculte.</p>
 </section>

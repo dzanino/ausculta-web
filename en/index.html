@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Ausculta - Auscultation Atlas | Breathune</title>
-<meta name="description" content="Ausculta is an educational auscultation atlas: textbook heart, lung and bowel sounds from open databases, ECG examples with heart sound, a quiz, side-by-side comparison of two sounds and a stethoscope guide. It does not use the microphone and measures nothing. Not a medical device.">
+<meta name="description" content="Ausculta is an educational auscultation atlas: textbook heart, lung and bowel sounds from open databases, ECG examples with heart sound, a map of the auscultation sites, cases, a quiz, daily practice with spaced repetition and a stethoscope guide. It does not use the microphone and measures nothing. Not a medical device.">
 <meta name="theme-color" content="#060a18">
 <meta property="og:title" content="Ausculta - Auscultation Atlas | Breathune">
-<meta property="og:description" content="Ausculta is an educational auscultation atlas: textbook heart, lung and bowel sounds from open databases, ECG examples with heart sound, a quiz, side-by-side comparison of two sounds and a stethoscope guide. It does not use the microphone and measures nothing. Not a medical device.">
+<meta property="og:description" content="Ausculta is an educational auscultation atlas: textbook heart, lung and bowel sounds from open databases, ECG examples with heart sound, a map of the auscultation sites, cases, a quiz, daily practice with spaced repetition and a stethoscope guide. It does not use the microphone and measures nothing. Not a medical device.">
 <meta property="og:image" content="../assets/icon.png">
 <link rel="icon" href="../assets/icon.png">
 <link rel="apple-touch-icon" href="../assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
-<link rel="alternate" hreflang="sk" href="../index.html"><link rel="alternate" hreflang="en" href="../en/index.html">
+
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
 <script type="application/ld+json" id="ld-ausculta">
 {
@@ -27,12 +27,14 @@
    "applicationCategory": "EducationalApplication",
    "applicationSubCategory": "Medical education",
    "operatingSystem": "iOS",
-   "softwareVersion": "2.1",
+   "softwareVersion": "2.2",
    "url": "https://dzanino.github.io/ausculta-web/",
    "downloadUrl": "https://apps.apple.com/app/id6819630118",
    "inLanguage": [
     "sk",
-    "en"
+    "en",
+    "cs",
+    "de"
    ],
    "isAccessibleForFree": true,
    "offers": {
@@ -65,6 +67,7 @@
  ]
 }
 </script>
+<link rel="alternate" hreflang="sk" href="../index.html"><link rel="alternate" hreflang="en" href="../en/index.html">
 </head>
 <body>
 <header class="nav"><div class="wrap">
@@ -78,7 +81,7 @@
   <div class="reveal">
     <span class="eyebrow">Ausculta · Latin auscultare - to listen attentively</span>
     <h1>Learn auscultation<br><span class="grad">by ear.</span></h1>
-    <p class="lead">Ausculta is an educational atlas for learning auscultation. It contains 35 textbook heart, lung and bowel sounds from open research databases, each with a description, source and licence, and 4 ECG examples with heart sound. You practise with a quiz and by comparing two sounds side by side, and the guide reminds you where and how to listen with a stethoscope. The app does not use the microphone and measures nothing. Free to download.</p>
+    <p class="lead">Ausculta is an educational atlas for learning auscultation. It contains 42 textbook heart, lung and bowel sounds from open research databases, each with a description, source and licence, and 4 ECG examples with heart sound. You also find the sounds on a map of the auscultation sites, practise with a quiz, short cases and daily practice with spaced repetition, and the guide reminds you where and how to listen with a stethoscope. The app does not use the microphone and measures nothing. It is in Slovak, English, Czech and German, and free to download.</p>
     <div class="actions">
       <a class="btn" href="#ako">How to learn →</a>
       <a class="btn ghost" href="methodology.html">Technical info</a>
@@ -87,7 +90,8 @@
       <span class="pill coral"><i style="background:var(--coral)"></i>Heart sounds</span>
       <span class="pill mint"><i style="background:var(--mint)"></i>Lung sounds</span>
       <span class="pill" style="color:var(--amber)"><i style="background:var(--amber)"></i>Bowel sounds</span>
-      <span class="pill violet"><i style="background:var(--violet)"></i>Quiz</span>
+      <span class="pill teal"><i style="background:var(--teal)"></i>Site map</span>
+      <span class="pill violet"><i style="background:var(--violet)"></i>Quiz and practice</span>
     </div>
   </div>
 
@@ -100,9 +104,9 @@
 <div class="card notice reveal" style="margin-top:20px"><b>Important.</b> <span class="muted">Ausculta is an educational aid for learning to listen. It is not a medical device under Regulation (EU) 2017/745, it measures nothing, does not diagnose, and does not replace an examination by a doctor. Always consult a doctor about health concerns.</span></div>
 
 <div class="band reveal" style="margin-top:20px">
-  <div><b class="grad">35</b><span>textbook sound examples</span></div>
+  <div><b class="grad">42</b><span>textbook sound examples</span></div>
   <div><b class="grad">4</b><span>ECG examples with heart sound</span></div>
-  <div><b class="grad">12</b><span>examples free, Pro unlocks another 23</span></div>
+  <div><b class="grad">12</b><span>examples free, Pro unlocks another 30</span></div>
   <div><b class="grad">0</b><span>bytes sent to a server</span></div>
 </div>
 
@@ -119,7 +123,7 @@
 <section id="preco" class="reveal">
   <span class="eyebrow">Why auscultation</span>
   <h2>A skill that is slipping out of training</h2>
-  <p class="lead">Auscultation remains the first choice at the bedside and in the field: it is cheap, immediate and available even where there is no echocardiography. Mastering it, however, takes many repetitions, and chances to listen at the bedside are getting fewer. Ausculta helps you train your ear: an atlas of textbook examples from open databases that you can play again and again, and a quiz that shows what you already recognise.</p>
+  <p class="lead">Auscultation remains the first choice at the bedside and in the field: it is cheap, immediate and available even where there is no echocardiography. Mastering it, however, takes many repetitions, and chances to listen at the bedside are getting fewer. Ausculta helps you train your ear: an atlas of textbook examples from open databases that you can play again and again, a quiz that shows what you already recognise, and daily practice that brings the sounds back after a few days.</p>
   <div class="band" style="margin-top:20px">
     <div><b class="grad">20 %</b><span>of cardiac findings recognised by residents (JAMA 1997)</span></div>
     <div><b class="grad">&lt; 50 %</b><span>of lung findings recognised by residents (AJRCCM 1999)</span></div>
@@ -128,7 +132,7 @@
   </div>
   <div class="grid">
     <div class="card"><h3>Recognition is poor and barely improves with years of training</h3><p>Mangione and Nieman tested 453 physicians in training and 88 medical students on 12 cardiac findings recorded from patients: internal medicine and family practice residents recognised on average 20 % of them, with little change by year of training. In a second study (656 physicians in training and 194 medical students), residents recognised on average fewer than half of 10 lung findings, again with little improvement during training. A later test of 860 participants showed that cardiac examination skills do not improve after the third year of the four-year US medical course, not even in residents and practising physicians; only cardiology fellows did better.</p></div>
-    <div class="card"><h3>Repetition works</h3><p>Barrett and colleagues had 51 second-year medical students listen to each of four basic murmurs 500 times: accuracy rose from 13.5 % to 85 % (monitored) and from 20.9 % to 86.1 % (unmonitored); the control group did not improve significantly (24 % to 32 %). Auscultation is in part a technical skill learned by repetition. Ausculta is built for that kind of repetition: an atlas you can play a hundred times and a quiz that shows what you already recognise without the description.</p></div>
+    <div class="card"><h3>Repetition works</h3><p>Barrett and colleagues had 51 second-year medical students listen to each of four basic murmurs 500 times: accuracy rose from 13.5 % to 85 % (monitored) and from 20.9 % to 86.1 % (unmonitored); the control group did not improve significantly (24 % to 32 %). Auscultation is in part a technical skill learned by repetition. Ausculta is built for that kind of repetition: an atlas you can play a hundred times, a quiz that shows what you already recognise without the description, and daily practice that brings the sounds back at spaced intervals.</p></div>
     <div class="card"><h3>The trend points down</h3><p>At one US academic centre, the scores of students and physicians in training in a cardiac auscultation simulation test fell between 2008 and 2018 by 0.15 points a year (a 16-sound test, mean 7.7 points; 411 tests, 85 % of them medical students). Echocardiography has not replaced auscultation, it has complemented it: the ear at the bedside often helps decide who to refer, and when.</p></div>
   </div>
   <p class="muted" style="font-size:13px;line-height:1.6">Sources: Mangione S, Nieman LZ. JAMA. 1997;278(9):717-722 (PMID 9286830). Mangione S, Nieman LZ. Am J Respir Crit Care Med. 1999;159(4):1119-1124 (doi:10.1164/ajrccm.159.4.9806083). Vukanovic-Criley JM et al. Arch Intern Med. 2006;166(6):610-616 (doi:10.1001/archinte.166.6.610). Barrett MJ et al. Chest. 2004;126(2):470-475 (doi:10.1378/chest.126.2.470). Zhang NS et al. Am Heart J. 2025 (doi:10.1016/j.ahj.2025.03.006). Verified in PubMed on 24 October 2026.</p>
@@ -137,12 +141,14 @@
 <section id="ako" class="reveal">
   <span class="eyebrow">Learning</span>
   <h2>How to learn with the atlas</h2>
-  <p class="lead">The atlas is built on repetition: listen, read the description, test yourself and come back to what has not clicked yet.</p>
-  <div class="grid steps four">
+  <p class="lead">The atlas is built on repetition: listen, read the description, slow down what escapes you, test yourself and come back to what has not clicked yet.</p>
+  <div class="grid steps">
     <div class="card lift"><h3>Listen with the description</h3><p>Listen to each example several times in headphones with the description open, until you can recognise it without reading. Headphones bring out quiet sounds too, such as a third heart sound or fine crackles; the examples also play through the speaker.</p></div>
+    <div class="card lift"><h3>Slow down and watch the waveform</h3><p>For fast or complex examples switch the speed to 0.75× or 0.5×: the pitch does not change, you just have more time for each sound. Drag on the waveform to loop the stretch that escapes you. In the annotated examples, follow the S1 and S2 marks or the stretches of wheezes and crackles.</p></div>
     <div class="card lift"><h3>Test yourself in the quiz</h3><p>The quiz plays an example and you pick the type of sound from up to four names. You see right away whether you were right, along with the textbook description. Only your answers are scored.</p></div>
+    <div class="card lift"><h3>Walk through a case</h3><p>A case leads you across the marked sites on the map as at the bedside: at each one you listen to an example and name the type of sound. It is a way to link a sound with the place where it is heard.</p></div>
     <div class="card lift"><h3>Compare two examples</h3><p>Compare two plays two examples side by side, for example normal breathing and wheezes, or fine and coarse crackles. Play one, then the other, and notice what sets them apart.</p></div>
-    <div class="card lift"><h3>Come back to the examples</h3><p>The “Heard X of Y” overview shows how many examples in a section you have heard, and the “Not yet heard” filter picks the ones you are missing. Come back to the examples after a few days: in auscultation, repetition is what works.</p></div>
+    <div class="card lift"><h3>Come back in daily practice</h3><p>Daily practice prepares at most 20 examples a day: first the ones due for review, then new ones. Sounds you name correctly come back after a growing number of days, the ones you get wrong in the very next session. The “Heard X of Y” overview and the “Not yet heard” filter show what you are still missing in the atlas.</p></div>
   </div>
   <div class="shots">
     <figure><div class="device"><img src="../assets/img/en/screen-abdomen.jpg" alt="The Abdomen section of the atlas: normal bowel sounds with description and source" loading="lazy"></div><figcaption>Abdomen</figcaption></figure>
@@ -156,12 +162,19 @@
   <span class="eyebrow">Features</span>
   <h2>What Ausculta offers</h2>
   <div class="grid">
-    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6M9 11h4"/></svg></div><h3>Atlas of reference sounds</h3><p>35 textbook heart, lung and bowel sounds from open research databases (PhysioNet and others; one bowel sound example comes from the freesound.org sound library). Each has a description, source and licence. They play in headphones or through the speaker.</p></div>
+    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6M9 11h4"/></svg></div><h3>Atlas of reference sounds</h3><p>42 textbook heart, lung and bowel sounds from open research databases (PhysioNet and others; one bowel sound example comes from the freesound.org sound library). Each has a description, source and licence. They play in headphones or through the speaker.</p></div>
     <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v8m0 0c-1.5 0-2.5 1-3.5 2.2M12 11c1.5 0 2.5 1 3.5 2.2"/><path d="M8.5 6.5C5 7 3 12 3 16.5c0 2 1.2 3.2 3 3.2 2.6 0 3.5-2 3.5-4.5V9c0-1.5-.4-2.6-1-2.5zM15.5 6.5C19 7 21 12 21 16.5c0 2-1.2 3.2-3 3.2-2.6 0-3.5-2-3.5-4.5V9c0-1.5.4-2.6 1-2.5z" fill="currentColor" fill-opacity=".25"/></svg></div><h3>Heart, lungs and abdomen</h3><p>Normal heart sounds from different listening sites, systolic and diastolic murmurs, third and fourth heart sounds; vesicular and tracheal breathing, wheezes, rhonchi, crackles and stridor; normal bowel sounds and borborygmi. The description explains what you hear in each example.</p></div>
+    <div class="card lift"><div class="chip amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-5 3 10 2.5-7 1.5 2H21"/><path d="M6 19h12"/></svg></div><h3>Playback tools</h3><p>Every example has a waveform with a playback cursor, slower playback at 0.75× and 0.5× without a change in pitch, a loop over a chosen stretch (drag on the waveform) and the Wide, Bell and Diaphragm filters. In 20 examples the waveform carries S1 and S2 marks or stretches of wheezes, crackles, rhonchi, stridor, inhalation and exhalation taken from the annotations of the source databases. All of it works on the recording only; nothing is measured.</p></div>
     <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 0 1 5 1c0 1.7-2.5 2.2-2.5 3.7"/><path d="M12 17h.01"/></svg></div><h3>Quiz and comparison</h3><p>The quiz plays an example and you pick the type of sound; the textbook description follows right away. Only your answers are scored. Compare two plays two examples side by side, and the app remembers which examples you have already heard.</p></div>
+    <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg></div><h3>Daily practice</h3><p>Spaced repetition over the atlas sounds: a sound you name correctly comes back later (after 1, 3, 7 and then 14 days), a sound you get wrong comes back in the very next session. A daily session has at most 20 examples, first the ones due for review, then new ones. The overview shows your accuracy by type of sound over the last 30 days. Your progress stays on the phone.</p></div>
     <div class="card lift"><div class="chip coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5h5l1.5-5.5 2 10 1.5-4.5H22"/><path d="M2 18.5c1.25-2.6 2.5-2.6 3.75 0s2.5 2.6 3.75 0 2.5-2.6 3.75 0 2.5 2.6 3.75 0 2.5-2.6 3.75 0"/></svg></div><h3>ECG and heart sound</h3><p>4 examples from an open database in which the ECG and the heart sound were recorded together. You see them one above the other on one time axis and, during playback, follow how the heart sounds come after the electrical activation. Nothing is measured in the examples.</p></div>
     <div class="card lift"><div class="chip teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v5a4 4 0 0 0 8 0V3"/><path d="M9 12v3a5 5 0 0 0 10 0v-2"/><circle cx="19" cy="11" r="2"/></svg></div><h3>Stethoscope guide</h3><p>Where and how to listen with a conventional stethoscope: bell and diaphragm, pressure, auscultation sites of the heart and lungs, the four abdominal quadrants and how long to listen. As background for the atlas.</p></div>
-    <div class="card lift"><div class="chip teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="10" rx="3"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg></div><h3>Privacy</h3><p>The app does not use the microphone, has no account, server or analytics and collects no data. Purchases are handled by the App Store.</p></div>
+    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></div><h3>Four languages</h3><p>Ausculta is in Slovak, English, Czech and German and follows the language of your iPhone. The descriptions, the quiz, the cases and the guide are in all four languages.</p></div>
+    <div class="card lift"><div class="chip teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="10" rx="3"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg></div><h3>Privacy</h3><p>The app does not use the microphone, has no account, server or analytics and collects no data. Your practice progress stays on the phone. Purchases are handled by the App Store.</p></div>
+  </div>
+  <div class="grid two">
+    <div class="card lift"><img src="../assets/img/en/sites.svg" alt="Auscultation sites of the heart and lungs on a drawn chest"><h3>Site map</h3><p>A drawn chest, front and back, and abdomen with the auscultation sites: A aortic, P pulmonic, E Erb's point, T tricuspid, M apex; lung apex, side of the chest and lung base, back and trachea; next to the navel. Tapping a site opens the examples that, according to the source database, were recorded there, together with the playback tools. The app never guesses a site: examples appear only at the sites the source states, which is why Erb's point, for example, has no example yet.</p></div>
+    <div class="card lift"><div class="chip coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg></div><h3>Cases</h3><p>Six short textbook situations built only from atlas examples: a fellow student and four heart sites, a child at a check-up, a child with noisy breathing, an adult with a cough, an adult listened to with the bell at the lower left sternal border, and the abdomen before and after a meal. You walk through the marked sites, listen to an example at each one and name the type of sound; at the end you see what you got right. The cases are not real patients and only your answers are scored.</p></div>
   </div>
 </section>
 
@@ -185,8 +198,8 @@
   <h2>Free and Ausculta Pro</h2>
   <p class="lead">Ausculta is a free download. Ausculta Pro is a one-time in-app purchase, not a subscription.</p>
   <div class="grid">
-    <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/></svg></div><h3>Free</h3><p>12 of the 35 atlas sounds, the quiz and Compare two with the free examples, all 4 ECG examples with heart sound, the overview of examples you have heard and the whole guide.</p></div>
-    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/></svg></div><h3>Ausculta Pro</h3><p>Unlocks the other 23 atlas sounds, which then also appear in the quiz and in Compare two. One-time purchase; the App Store shows the price in your local currency.</p></div>
+    <div class="card lift"><div class="chip mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/></svg></div><h3>Free</h3><p>12 of the 42 atlas sounds, all 4 ECG examples with heart sound, the site map, cases, quiz, daily practice and Compare two with the free examples, the playback tools, the overview of examples you have heard and the whole guide.</p></div>
+    <div class="card lift"><div class="chip violet"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/></svg></div><h3>Ausculta Pro</h3><p>Unlocks the other 30 atlas sounds, which then also appear on the map, in the quiz, in the cases, in daily practice and in Compare two. One-time purchase; the App Store shows the price in your local currency.</p></div>
   </div>
   <p class="muted">A voluntary contribution to development and maintenance (Support development) unlocks nothing. If you wish, it supports further work on Ausculta.</p>
 </section>

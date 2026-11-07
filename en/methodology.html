@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Technical info - How Ausculta works | Breathune</title>
-<meta name="description" content="How the Ausculta atlas is made: choosing examples from open databases, licences, sound preparation, descriptions, the quiz, comparison and the ECG examples with heart sound. The app does not use the microphone and measures nothing.">
+<meta name="description" content="How the Ausculta atlas is made: choosing examples from open databases, licences, sound preparation, descriptions, slower playback and filters, S1 and S2 marks and stretches from the database annotations, the site map, cases, the quiz, daily practice with spaced repetition and the ECG examples with heart sound. The app does not use the microphone and measures nothing.">
 <meta name="theme-color" content="#060a18">
 <meta property="og:title" content="Technical info - How Ausculta works | Breathune">
-<meta property="og:description" content="How the Ausculta atlas is made: choosing examples from open databases, licences, sound preparation, descriptions, the quiz, comparison and the ECG examples with heart sound. The app does not use the microphone and measures nothing.">
+<meta property="og:description" content="How the Ausculta atlas is made: choosing examples from open databases, licences, sound preparation, descriptions, slower playback and filters, S1 and S2 marks and stretches from the database annotations, the site map, cases, the quiz, daily practice with spaced repetition and the ECG examples with heart sound. The app does not use the microphone and measures nothing.">
 <meta property="og:image" content="../assets/icon.png">
 <link rel="icon" href="../assets/icon.png">
 <link rel="apple-touch-icon" href="../assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
-<link rel="alternate" hreflang="sk" href="../methodology.html"><link rel="alternate" hreflang="en" href="../en/methodology.html">
+
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
+<link rel="alternate" hreflang="sk" href="../methodology.html"><link rel="alternate" hreflang="en" href="../en/methodology.html">
 </head>
 <body>
 <header class="nav"><div class="wrap">
@@ -27,13 +28,13 @@
 <section class="pagehead reveal" style="max-width:820px">
   <span class="eyebrow">Technical info</span>
   <h1>How Ausculta <span class="grad">works</span></h1>
-  <p class="lead">Ausculta is an atlas of recorded textbook examples for learning auscultation. This page describes where the examples come from, how they are prepared and described, and how the quiz and comparison work. The app does not use the microphone, measures nothing and evaluates nothing.</p>
+  <p class="lead">Ausculta is an atlas of recorded textbook examples for learning auscultation. This page describes where the examples come from, how they are prepared and described, what the playback tools do, where the marks on the waveform come from, and how the quiz, comparison, site map, cases and daily practice work. The app does not use the microphone, measures nothing and evaluates nothing.</p>
 </section>
 
 <section class="reveal">
   <span class="eyebrow">Atlas</span>
   <h2>Where the examples come from</h2>
-  <p class="lead">The atlas contains 35 sound examples (14 heart, 16 lungs, 5 abdomen) and 4 ECG examples with heart sound. All come from open research databases that allow reuse with attribution; one bowel sound example comes from the freesound.org sound library. The examples are part of the app; nothing is downloaded from the internet.</p>
+  <p class="lead">The atlas contains 42 sound examples (18 heart, 17 lungs, 7 abdomen) and 4 ECG examples with heart sound. All come from open research databases that allow reuse with attribution; one bowel sound example comes from the freesound.org sound library. The examples are part of the app; nothing is downloaded from the internet.</p>
   <div class="card tablecard"><table>
   <tr><th>Database</th><th>What the atlas uses</th><th>Licence</th></tr>
   <tr><td><a href="https://physionet.org/content/circor-heart-sound/1.0.3/">CirCor DigiScope</a> (PhysioNet)</td><td>heart sounds from different listening sites (recordings of children)</td><td><a href="https://opendatacommons.org/licenses/by/1-0/">ODC-By 1.0</a></td></tr>
@@ -75,6 +76,30 @@
 </section>
 
 <section class="reveal">
+  <span class="eyebrow">Playback</span>
+  <h2>What the playback tools do</h2>
+  <p class="lead">Slower playback, the loop and the filters work only on the finished recording of an example while it plays. The stored file is not changed and nothing is measured. The tools are in the Atlas under the section picker, in Compare two and on the site map.</p>
+  <div class="grid">
+    <div class="card"><h3>Slower playback at the same pitch</h3><p>Speeds 1×, 0.75× and 0.5×. The recording is stretched in time (time stretching in the iOS audio player) and the pitch stays: at 0.5× the example lasts twice as long, but S1, S2, a murmur and wheezes sound just as high as in the original. Plain slow playback would also lower the sound by an octave and change its character.</p></div>
+    <div class="card"><h3>Loop over a stretch</h3><p>Drag on the waveform of the recording to select a stretch, for example one cardiac cycle or one breath in, and it repeats over and over; tap the waveform to clear the loop. The loop also works together with slower playback and a filter.</p></div>
+    <div class="card"><h3>Wide, Bell and Diaphragm filters</h3><p>A band-pass on the recording as it plays: Wide passes 20 to 2500 Hz, Bell 20 to 220 Hz and Diaphragm 100 to 1200 Hz. The names recall the two sides of a stethoscope chest piece (the bell brings out low sounds, the diaphragm higher ones), but this is not a model of any particular stethoscope. The filter can be switched at any time; the recording stays the same.</p></div>
+    <div class="card"><h3>Waveform with a cursor</h3><p>Below the controls is the loudness envelope of the recording with a cursor that shows where you are. It is a display of the stored file, not a measurement.</p></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <span class="eyebrow">Annotations</span>
+  <h2>Where the S1 and S2 marks and the stretches on the waveform come from</h2>
+  <p class="lead">In 20 of the 42 examples the waveform carries marks or coloured stretches. All of them come from annotations made by the authors of the source databases. Ausculta only transfers them into the excerpt; it recognises and computes nothing.</p>
+  <div class="grid">
+    <div class="card"><h3>Heart: S1 and S2 from CirCor</h3><p>The CirCor DigiScope database (PhysioNet) provides for every recording a segmentation of the cardiac cycle into the states S1, systole, S2 and diastole. In the 8 heart examples from this database, the centre of every S1 and S2 segment was transferred into the example as a mark (289 marks in all). The examples from EPHNOGRAM, HLS-CMDS and JUST have no marks because these databases provide no segmentation.</p></div>
+    <div class="card"><h3>Lungs: stretches from SPRSound and HF_Lung_V1</h3><p>SPRSound provides events with a start and end time for its recordings (wheezes, rhonchi, crackles, stridor), HF_Lung_V1 the phases of inhalation and exhalation and the stretches of adventitious sounds. In the 8 lung examples from these databases the stretches are shown in colour (78 stretches in all); stretches of different kinds may overlap, for example crackles inside an inhalation. The examples from KAUH and SMART-Ped have no stretches; these databases label only the whole recording.</p></div>
+    <div class="card"><h3>How they are transferred into the excerpt</h3><p>Every example is an excerpt of a source recording with a known start. The annotation times are shifted by that start and clipped to the length of the example; stretches shorter than 50 ms after clipping are left out. During preparation every excerpt was produced again from the source recording and compared with the file in the app (identical to the last sample), so that the times line up. The marks are rounded to thousandths of a second.</p></div>
+  </div>
+  <div class="card notice" style="margin-top:20px"><p class="muted" style="margin:0">The marks and stretches are displayed annotations of the source databases, not the result of an analysis. Ausculta detects nothing in the recording, counts no heart sounds or intervals, and a missing mark on an example means only that the source provides no annotation for it. A single mark may sit on a quiet heart sound masked by a murmur or in the faded-in start of the example.</p></div>
+</section>
+
+<section class="reveal">
   <span class="eyebrow">Descriptions</span>
   <h2>How the descriptions are written</h2>
   <div class="card"><p>Every example has a title and a description of two or three sentences: what you hear in the recording and what textbooks call it, for example where a murmur sits in the cardiac cycle, whether crackles are fine or coarse and in which phase of breathing they occur. The names of lung sounds follow the recommended respiratory sound terminology (CORSA): wheezes, rhonchi, crackles, stridor. The descriptions are based on the label the database authors gave the recording and on textbooks; they do not describe a particular person and give no age or diagnosis from the original record. A property of the database is mentioned only when it explains something, such as the faster beats in recordings of children.</p></div>
@@ -91,6 +116,26 @@
 </section>
 
 <section class="reveal">
+  <span class="eyebrow">Map and cases</span>
+  <h2>Site map and cases</h2>
+  <div class="grid two">
+    <div class="card"><h3>Site map</h3><p>Every atlas example states its listening site when the source database states it (for example CirCor distinguishes the aortic, pulmonic and tricuspid areas and the apex, SMART-Ped the trachea, Mansour the site next to the navel). The map is a drawn chest, front and back, and abdomen with the sites A, P, E, T, M, lung apex, side of the chest and lung base, back, trachea and next to the navel; a tap opens the examples with that site. A site is never guessed: examples with no stated site (6 of 42) are not on the map, and Erb's point has no example yet because none of the source databases names it. The placement of the points on the drawing is textbook placement, not anatomically exact for any particular person.</p></div>
+    <div class="card"><h3>Cases</h3><p>Six short situations (a fellow student with four heart sites, a child at a check-up, a child with noisy breathing, an adult with a cough, an adult at the lower left sternal border, the abdomen before and after a meal) are built only from atlas examples: each station is a site on the map and one example recorded there. The scenario is a textbook text, not a description of a real patient, and the example descriptions give no age or diagnosis from the original record. At each station you listen to the example and choose the type of sound from the options as in the quiz; only your answers are scored. Without Ausculta Pro you walk through the stations with free examples; locked ones are skipped and the app says so.</p></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <span class="eyebrow">Daily practice</span>
+  <h2>Spaced repetition</h2>
+  <div class="grid">
+    <div class="card"><h3>Five boxes</h3><p>The practice uses the Leitner system: every atlas example has a card in one of boxes 1 to 5. Naming it correctly moves the card up one box, naming it wrongly sends it back to box 1. A card in box 1 is due right away, in box 2 after a day, in box 3 after three days, in box 4 after a week and in box 5 after two weeks (intervals of 0, 1, 3, 7 and 14 days).</p></div>
+    <div class="card"><h3>Daily session</h3><p>One session has at most 20 examples: first the ones due for review (lowest box first), then examples you have not yet had in practice, in atlas order. Without Ausculta Pro the free examples are practised, with Pro all of them. A question looks like the quiz: the example plays and you choose the type of sound.</p></div>
+    <div class="card"><h3>Overview and storage</h3><p>The overview shows correct answers out of the total by type of sound over the last 30 days; the app keeps the last 500 answers. Cards and answers are stored only on the phone, in the app settings, and are deleted when the app is uninstalled. They describe your answers about the atlas recordings, nothing about your body; nothing is sent.</p></div>
+  </div>
+  <p class="muted">Why spaced repetition: repeated listening is what works in auscultation (Barrett 2004, see <a href="index.html#preco">Why auscultation</a>), and spreading the repetitions over days with growing gaps is the principle of the Leitner system.</p>
+</section>
+
+<section class="reveal">
   <span class="eyebrow">ECG + sound</span>
   <h2>ECG and heart sound on one time axis</h2>
   <div class="card"><p>The four examples come from the EPHNOGRAM database, in which the ECG and the heart sound were recorded together in adults at rest. You see both traces one above the other on a shared time axis, and during playback a time marker moves along them, so you can follow how the heart sounds come after the electrical activation. The heart sound has the mains hum (50 Hz and its multiples) removed, is limited to the band up to 1 kHz and is stored at 4000 samples per second. The ECG is in the 0.5-40 Hz band at 250 samples per second. All processing is zero-phase, so the traces are not shifted in time against each other.</p></div>
@@ -100,7 +145,7 @@
 <section class="reveal">
   <span class="eyebrow">Limits</span>
   <h2>What Ausculta does not do</h2>
-  <div class="card notice"><p class="muted" style="margin:0">Ausculta does not use the microphone and picks up no sound or signal from the body. It measures nothing, shows no health values, does not recognise sounds, produces no diagnoses and gives no recommendations. The quiz scores only the answer you pick for an atlas example. Ausculta is not a medical device and does not replace an examination by a doctor. Always consult a doctor about health concerns.</p></div>
+  <div class="card notice"><p class="muted" style="margin:0">Ausculta does not use the microphone and picks up no sound or signal from the body. It measures nothing, shows no health values, does not recognise sounds, produces no diagnoses and gives no recommendations. The marks and stretches on the waveform are transferred annotations of the source databases; the filters and slower playback only change how the recording plays. The quiz, the cases and daily practice score only the answer you pick for an atlas example. Ausculta is not a medical device and does not replace an examination by a doctor. Always consult a doctor about health concerns.</p></div>
 </section>
 
 <section class="reveal">
@@ -110,15 +155,16 @@
   Bohadana A, Izbicki G, Kraman SS. Fundamentals of lung auscultation. N Engl J Med. 2014;370(8):744-751.<br>
   Pasterkamp H, Kraman SS, Wodicka GR. Respiratory sounds: advances beyond the stethoscope. Am J Respir Crit Care Med. 1997;156(3):974-987.<br>
   Mangione S, Nieman LZ. Cardiac auscultatory skills of internal medicine and family practice trainees. JAMA. 1997;278(9):717-722.<br>
-  Barrett MJ, Lacey CS, Sekara AE, Linden EA, Gracely EJ. Mastering cardiac murmurs: the power of repetition. Chest. 2004;126(2):470-475.</p></div>
+  Barrett MJ, Lacey CS, Sekara AE, Linden EA, Gracely EJ. Mastering cardiac murmurs: the power of repetition. Chest. 2004;126(2):470-475.<br>
+  Leitner S. So lernt man lernen. Freiburg: Herder; 1972 (the Leitner system of spaced repetition).</p></div>
   <p class="muted">The full citations of the databases are in the app under Atlas: sources and licences; the sources for the Why auscultation section are on the <a href="index.html#preco">home page</a>.</p>
 </section>
 <section class="reveal" id="cite">
   <span class="eyebrow">Citation</span>
   <h2>How to cite Ausculta</h2>
   <div class="card" style="overflow-wrap:anywhere"><p>If you use Ausculta in teaching, a presentation or a publication, please cite it like this:</p>
-  <p><b>APA:</b> Šikuta, J. (2026). <i>Ausculta - Auscultation Atlas</i> (Version 2.1) [Mobile app]. App Store. https://apps.apple.com/app/id6819630118<br>
-  <b>Vancouver:</b> Šikuta J. Ausculta - Auscultation Atlas [mobile application]. Version 2.1. Bratislava: Ján Šikuta; 2026 [cited YYYY Mon DD]. Available from: https://apps.apple.com/app/id6819630118</p>
+  <p><b>APA:</b> Šikuta, J. (2026). <i>Ausculta - Auscultation Atlas</i> (Version 2.2) [Mobile app]. App Store. https://apps.apple.com/app/id6819630118<br>
+  <b>Vancouver:</b> Šikuta J. Ausculta - Auscultation Atlas [mobile application]. Version 2.2. Bratislava: Ján Šikuta; 2026 [cited YYYY Mon DD]. Available from: https://apps.apple.com/app/id6819630118</p>
   <p class="muted">Please state the version you used (shown on the App Store page). When citing a specific sound, also cite the original database; the source and licence are shown with every example in the app.</p>
   <p>Author: Ján Šikuta, MD, PhD · ORCID <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">0000-0002-4690-0317</a> · <a href="mailto:admin@breathune.eu">admin@breathune.eu</a></p></div>
 </section>
